@@ -1,0 +1,122 @@
+{
+  "./noop": [
+    {
+      "id": "./node_modules/next/dist/client/noop.js",
+      "name": "./node_modules/next/dist/client/noop.js",
+      "file": "static/chunks/0.js",
+      "publicPath": "static/chunks/0.js"
+    }
+  ],
+  "../components/SommWidget": [
+    {
+      "id": "./components/SommWidget.jsx",
+      "name": "./components/SommWidget.jsx",
+      "file": "static/chunks/1.js",
+      "publicPath": "static/chunks/1.js"
+    }
+  ],
+  "@babel/runtime-corejs2/helpers/esm/extends": [
+    {
+      "id": "./node_modules/@babel/runtime-corejs2/helpers/esm/extends.js",
+      "name": "./node_modules/@babel/runtime-corejs2/helpers/esm/extends.js",
+      "file": "static/chunks/1.js",
+      "publicPath": "static/chunks/1.js"
+    }
+  ],
+  "@popmotion/easing": [
+    {
+      "id": "./node_modules/@popmotion/easing/dist/easing.es.js",
+      "name": "./node_modules/@popmotion/easing/dist/easing.es.js",
+      "file": "static/chunks/1.js",
+      "publicPath": "static/chunks/1.js"
+    }
+  ],
+  "@popmotion/popcorn": [
+    {
+      "id": "./node_modules/@popmotion/popcorn/dist/popcorn.es.js",
+      "name": "./node_modules/@popmotion/popcorn/dist/popcorn.es.js",
+      "file": "static/chunks/1.js",
+      "publicPath": "static/chunks/1.js"
+    }
+  ],
+  "framesync": [
+    {
+      "id": "./node_modules/framesync/dist/framesync.es.js",
+      "name": "./node_modules/framesync/dist/framesync.es.js",
+      "file": "static/chunks/1.js",
+      "publicPath": "static/chunks/1.js"
+    }
+  ],
+  "hey-listen": [
+    {
+      "id": "./node_modules/hey-listen/dist/hey-listen.es.js",
+      "name": "./node_modules/hey-listen/dist/hey-listen.es.js",
+      "file": "static/chunks/1.js",
+      "publicPath": "static/chunks/1.js"
+    }
+  ],
+  "popmotion-pose": [
+    {
+      "id": "./node_modules/popmotion-pose/dist/popmotion-pose.es.js",
+      "name": "./node_modules/popmotion-pose/dist/popmotion-pose.es.js",
+      "file": "static/chunks/1.js",
+      "publicPath": "static/chunks/1.js"
+    }
+  ],
+  "popmotion": [
+    {
+      "id": "./node_modules/popmotion/dist/popmotion.es.js",
+      "name": "./node_modules/popmotion/dist/popmotion.es.js",
+      "file": "static/chunks/1.js",
+      "publicPath": "static/chunks/1.js"
+    }
+  ],
+  "pose-core": [
+    {
+      "id": "./node_modules/pose-core/dist/pose-core.es.js",
+      "name": "./node_modules/pose-core/dist/pose-core.es.js",
+      "file": "static/chunks/1.js",
+      "publicPath": "static/chunks/1.js"
+    }
+  ],
+  "react-pose": [
+    {
+      "id": "./node_modules/react-pose/dist/react-pose.es.js",
+      "name": "./node_modules/react-pose/dist/react-pose.es.js",
+      "file": "static/chunks/1.js",
+      "publicPath": "static/chunks/1.js"
+    }
+  ],
+  "style-value-types": [
+    {
+      "id": "./node_modules/style-value-types/dist/style-value-types.es.js",
+      "name": "./node_modules/style-value-types/dist/style-value-types.es.js",
+      "file": "static/chunks/1.js",
+      "publicPath": "static/chunks/1.js"
+    }
+  ],
+  "stylefire": [
+    {
+      "id": "./node_modules/stylefire/dist/stylefire.es.js",
+      "name": "./node_modules/stylefire/dist/stylefire.es.js",
+      "file": "static/chunks/1.js",
+      "publicPath": "static/chunks/1.js"
+    }
+  ],
+  "tslib": [
+    {
+      "id": "./node_modules/tslib/tslib.es6.js",
+      "name": "./node_modules/tslib/tslib.es6.js",
+      "file": "static/chunks/1.js",
+      "publicPath": "static/chunks/1.js"
+    }
+  ],
+  "vh-check": [
+    {
+      "id": "./node_modules/vh-check/dist/vh-check.js",
+      "name": "./node_modules/vh-check/dist/vh-check.js",
+      "file": "static/chunks/1.js",
+      "publicPath": "static/chunks/1.js"
+    }
+  ]
+}
