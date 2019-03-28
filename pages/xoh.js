@@ -2,6 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 import dynamic from 'next/dynamic'
 import Head from 'next/head'
+
+import DemoBanner from '../components/DemoBanner'
+
 import { createGlobalStyle } from 'styled-components'
 
 const GlobalStyle = createGlobalStyle`
@@ -23,36 +26,6 @@ const DemoWrapper = styled.div`
   position: relative;
 `;
 
-const DemoBanner = styled.div`
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  height: 64px;
-  background: #1f1f1f;
-  padding: 0 48px;
-  box-sizing: border-box;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  color: #fff;
-  font-weight: bold;
-
-  & a {
-    display: inline-flex;
-    height: 48px;
-    background: #f94343;
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 4px;
-    align-items: center;
-    justify-content: center;
-    padding: 0 16px;
-    margin-left: 8px;
-  }
-`;
-
 const IFrameWrapper = styled.div`
   width: 100vw;
   height: 100%;
@@ -66,7 +39,7 @@ const IFrameWrapper = styled.div`
   }
 `;
 
-const XOHDemo = ({}) => (
+export default () =>
   <DemoWrapper>
     <GlobalStyle />
     <Head>
@@ -76,18 +49,9 @@ const XOHDemo = ({}) => (
         content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no"
       />
     </Head>
-    <DemoBanner>
-      This is a custom demo of Somm.
-      <div>
-        Like what you see?
-        <a href="mailto: chris@somm.ca">Send Chris an email</a>
-      </div>
-    </DemoBanner>
+    <DemoBanner />
     <IFrameWrapper>
       <iframe src="https://xoh.ca" frameBorder="0"></iframe>
     </IFrameWrapper>
     <SommWidget username="xoh" icon="rounded" iconColor="#be713c" backgroundColor="#fff" position="right" message="Check out our menu 👇"/>
   </DemoWrapper>
-);
-
-export default XOHDemo;

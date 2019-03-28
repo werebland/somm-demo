@@ -1,0 +1,38 @@
+{
+  "modules": {
+    "byIdentifier": {
+      "multi private-next-pages/_document.js": 0,
+      "multi private-next-pages/index.js": 1,
+      "multi private-next-pages/xoh.js": 2,
+      "multi next/dist/pages/_app": 3,
+      "multi next/dist/pages/_error": 4
+    },
+    "usedIds": {
+      "0": 0,
+      "1": 1,
+      "2": 2,
+      "3": 3,
+      "4": 4
+    }
+  },
+  "chunks": {
+    "byName": {
+      "static/Nc8t3XiiW4VP2FIjNC1A_/pages/_app.js": 0,
+      "static/Nc8t3XiiW4VP2FIjNC1A_/pages/_document.js": 1,
+      "static/Nc8t3XiiW4VP2FIjNC1A_/pages/_error.js": 2,
+      "static/Nc8t3XiiW4VP2FIjNC1A_/pages/index.js": 3,
+      "static/Nc8t3XiiW4VP2FIjNC1A_/pages/xoh.js": 4
+    },
+    "bySource": {
+      "0 node_modules/next/dist/build/webpack/loaders/next-babel-loader.js??ref--4!pages/xoh.js ../components/SommWidget": 5
+    },
+    "usedIds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  }
+}
