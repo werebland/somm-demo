@@ -122,14 +122,18 @@ var StyledWidgetToggleIcon = styled_components__WEBPACK_IMPORTED_MODULE_9___defa
 }, function (props) {
   return props.role === "close" ? '1.3' : '1.2';
 });
+var WidgetToggleIconEmoji = styled_components__WEBPACK_IMPORTED_MODULE_9___default.a.span.withConfig({
+  displayName: "SommWidget__WidgetToggleIconEmoji",
+  componentId: "i7qmkt-4"
+})(["font-size:1.75rem;line-height:1.5rem;padding-top:4px;"]);
 var spinnerAnimation = Object(styled_components__WEBPACK_IMPORTED_MODULE_9__["keyframes"])(["0%{top:28px;left:28px;width:0;height:0;opacity:1;}100%{top:-1px;left:-1px;width:58px;height:58px;opacity:0;}"]);
 var SpinnerWrapper = styled_components__WEBPACK_IMPORTED_MODULE_9___default.a.div.withConfig({
   displayName: "SommWidget__SpinnerWrapper",
-  componentId: "i7qmkt-4"
+  componentId: "i7qmkt-5"
 })(["width:100%;height:100%;position:absolute;display:flex;align-items:center;justify-content:center;z-index:1;top:0;right:0;bottom:0;left:0;-webkit-overflow-scrolling:touch;overflow-y:scroll;border-radius:8px;& iframe{border-radius:8px;}"]);
 var Spinner = styled_components__WEBPACK_IMPORTED_MODULE_9___default.a.div.withConfig({
   displayName: "SommWidget__Spinner",
-  componentId: "i7qmkt-5"
+  componentId: "i7qmkt-6"
 })(["display:inline-flex;position:relative;width:64px;height:64px;& div{position:absolute;border:4px solid ", ";opacity:1;border-radius:50%;animation:", " 1.5s cubic-bezier(0,0.2,0.8,1) infinite}& div:nth-child(2){animation-delay:-0.5s;}"], function (props) {
   return props.color;
 }, spinnerAnimation);
@@ -152,13 +156,13 @@ var WidgetMessage = styled_components__WEBPACK_IMPORTED_MODULE_9___default()(fun
   return react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(PosedWidgetMessage, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_5__["default"])({}, props, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 182
+      lineNumber: 188
     },
     __self: this
   }));
 }).withConfig({
   displayName: "SommWidget__WidgetMessage",
-  componentId: "i7qmkt-6"
+  componentId: "i7qmkt-7"
 })(["width:224px;display:block;border:0;appearance:none;background:#FFFFFF;box-shadow:0 2px 16px -2px rgba(0,0,0,0.32);border-radius:8px;overflow:hidden;position:absolute;bottom:64px;right:0;scale:1;opacity:1;transform-origin:bottom right;padding:16px;box-sizing:border-box;display:flex;align-items:center;font-weight:700;color:#1f1f1f;font-size:1rem;"]);
 
 var Widget =
@@ -194,7 +198,7 @@ function (_Component) {
         position: this.props.position,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 227
+          lineNumber: 233
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(react_pose__WEBPACK_IMPORTED_MODULE_8__["PoseGroup"], {
@@ -202,20 +206,20 @@ function (_Component) {
         preEnterPose: "init",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 228
+          lineNumber: 234
         },
         __self: this
       }, this.state.messageVisible && !this.state.hasOpened && react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(WidgetMessage, {
         key: "1",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 230
+          lineNumber: 236
         },
         __self: this
       }, this.props.message)), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(react_pose__WEBPACK_IMPORTED_MODULE_8__["PoseGroup"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 235
+          lineNumber: 241
         },
         __self: this
       }, this.state.open && react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(StyledWidgetFrame, {
@@ -224,13 +228,13 @@ function (_Component) {
         position: this.props.position,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 237
+          lineNumber: 243
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(SpinnerWrapper, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 238
+          lineNumber: 244
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("iframe", {
@@ -249,26 +253,26 @@ function (_Component) {
         frameBorder: "0",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 239
+          lineNumber: 245
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(Spinner, {
         color: this.props.iconColor,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 247
+          lineNumber: 253
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 248
+          lineNumber: 254
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 249
+          lineNumber: 255
         },
         __self: this
       }))))), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(react_pose__WEBPACK_IMPORTED_MODULE_8__["PoseGroup"], {
@@ -276,7 +280,7 @@ function (_Component) {
         preEnterPose: "init",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 256
+          lineNumber: 262
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(WidgetToggle, {
@@ -290,7 +294,7 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 257
+          lineNumber: 263
         },
         __self: this
       }, this.state.open ? react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(StyledWidgetToggleIcon, {
@@ -298,7 +302,7 @@ function (_Component) {
         role: "close",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 260
+          lineNumber: 266
         },
         __self: this
       }, this.props.icon === "sharp" ? react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("svg", {
@@ -307,14 +311,14 @@ function (_Component) {
         viewBox: "0 0 24 24",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 263
+          lineNumber: 269
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("path", {
         d: "M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 264
+          lineNumber: 270
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("path", {
@@ -322,7 +326,7 @@ function (_Component) {
         fill: "none",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 265
+          lineNumber: 271
         },
         __self: this
       })) : react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("svg", {
@@ -331,7 +335,7 @@ function (_Component) {
         viewBox: "0 0 24 24",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 268
+          lineNumber: 274
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("path", {
@@ -339,14 +343,14 @@ function (_Component) {
         d: "M0 0h24v24H0V0z",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 269
+          lineNumber: 275
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("path", {
         d: "M18.3 5.71c-.39-.39-1.02-.39-1.41 0L12 10.59 7.11 5.7c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41L10.59 12 5.7 16.89c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0L12 13.41l4.89 4.89c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L13.41 12l4.89-4.89c.38-.38.38-1.02 0-1.4z",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 270
+          lineNumber: 276
         },
         __self: this
       }))) : react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(StyledWidgetToggleIcon, {
@@ -354,36 +358,12 @@ function (_Component) {
         role: "open",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 275
+          lineNumber: 281
         },
         __self: this
       }, this.props.icon === "rounded" && react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("svg", {
         width: "24",
         height: "24",
-        viewBox: "0 0 24 24",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 277
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("path", {
-        fill: "none",
-        d: "M0 0h24v24H0V0z",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 278
-        },
-        __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("path", {
-        d: "M8.1 13.34l2.83-2.83-6.19-6.18c-.48-.48-1.31-.35-1.61.27-.71 1.49-.45 3.32.78 4.56l4.19 4.18zm6.78-1.81c1.53.71 3.68.21 5.27-1.38 1.91-1.91 2.28-4.65.81-6.12-1.46-1.46-4.2-1.1-6.12.81-1.59 1.59-2.09 3.74-1.38 5.27L4.4 19.17c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0L12 14.41l6.18 6.18c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L13.41 13l1.47-1.47z",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 279
-        },
-        __self: this
-      })), this.props.icon === "sharp" && react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("svg", {
-        width: "24px",
-        height: "24px",
         viewBox: "0 0 24 24",
         __source: {
           fileName: _jsxFileName,
@@ -399,16 +379,40 @@ function (_Component) {
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("path", {
-        d: "M8.1 13.34l2.83-2.83L3.91 3.5c-1.56 1.56-1.56 4.09 0 5.66l4.19 4.18zm6.78-1.81c1.53.71 3.68.21 5.27-1.38 1.91-1.91 2.28-4.65.81-6.12-1.46-1.46-4.2-1.1-6.12.81-1.59 1.59-2.09 3.74-1.38 5.27L3.7 19.87l1.41 1.41L12 14.41l6.88 6.88 1.41-1.41L13.41 13l1.47-1.47z",
+        d: "M8.1 13.34l2.83-2.83-6.19-6.18c-.48-.48-1.31-.35-1.61.27-.71 1.49-.45 3.32.78 4.56l4.19 4.18zm6.78-1.81c1.53.71 3.68.21 5.27-1.38 1.91-1.91 2.28-4.65.81-6.12-1.46-1.46-4.2-1.1-6.12.81-1.59 1.59-2.09 3.74-1.38 5.27L4.4 19.17c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0L12 14.41l6.18 6.18c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L13.41 13l1.47-1.47z",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 285
         },
         __self: this
-      })), this.props.icon === "emoji" && react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(WidgetToggleIconEmoji, {
+      })), this.props.icon === "sharp" && react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("svg", {
+        width: "24px",
+        height: "24px",
+        viewBox: "0 0 24 24",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 289
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("path", {
+        fill: "none",
+        d: "M0 0h24v24H0V0z",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 290
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("path", {
+        d: "M8.1 13.34l2.83-2.83L3.91 3.5c-1.56 1.56-1.56 4.09 0 5.66l4.19 4.18zm6.78-1.81c1.53.71 3.68.21 5.27-1.38 1.91-1.91 2.28-4.65.81-6.12-1.46-1.46-4.2-1.1-6.12.81-1.59 1.59-2.09 3.74-1.38 5.27L3.7 19.87l1.41 1.41L12 14.41l6.88 6.88 1.41-1.41L13.41 13l1.47-1.47z",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 291
+        },
+        __self: this
+      })), this.props.icon === "emoji" && react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(WidgetToggleIconEmoji, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 295
         },
         __self: this
       }, "\uD83C\uDF7D\uFE0F")))));

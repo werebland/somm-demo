@@ -106,6 +106,12 @@ const StyledWidgetToggleIcon = styled(WidgetToggleIcon)`
   }
 `;
 
+const WidgetToggleIconEmoji = styled.span`
+  font-size: 1.75rem;
+  line-height: 1.5rem;
+  padding-top: 4px;
+`;
+
 const spinnerAnimation = keyframes`
   0% {
     top: 28px;
