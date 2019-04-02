@@ -6,6 +6,7 @@ const DemoBannerContainer = styled.div`
   top: 0;
   right: 0;
   left: 0;
+  z-index: 8;
   height: 64px;
   background: rgba(31, 31, 31, 0.8);
   padding: 0 48px;

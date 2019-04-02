@@ -20,7 +20,7 @@ const SommWidget = dynamic(() => import('../components/SommWidget'), {
 
 const DemoWrapper = styled.div`
   width: 100vw;
-  heght: 100%;
+  height: 100vh;
   overflow: hidden;
   position: relative;
 `;
@@ -30,6 +30,9 @@ const IFrameWrapper = styled.div`
   height: 100%;
   min-height: 100vh;
   display: flex;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
 
   & iframe {
     width: 100%;
@@ -50,7 +53,7 @@ export default () =>
     </Head>
     <DemoBanner />
     <IFrameWrapper>
-      <iframe src="http://lfbakeryhalifax.com/" frameBorder="0"></iframe>
+      <iframe src="https://lfbakeryhalifax.com/" frameBorder="0"></iframe>
     </IFrameWrapper>
     <SommWidget username="lfbakery" icon="rounded" iconColor="#fff" backgroundColor="#63d0df" position="right" message="Check out our menu 👇"/>
   </DemoWrapper>

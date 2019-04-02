@@ -26,6 +26,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_9__);
 /* harmony import */ var vh_check__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! vh-check */ "vh-check");
 /* harmony import */ var vh_check__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(vh_check__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var is_mobile__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! is-mobile */ "is-mobile");
+/* harmony import */ var is_mobile__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(is_mobile__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var react_emoji_render__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! react-emoji-render */ "react-emoji-render");
+/* harmony import */ var react_emoji_render__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(react_emoji_render__WEBPACK_IMPORTED_MODULE_12__);
 
 
 
@@ -33,6 +37,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var _jsxFileName = "/Users/Chris/somm-demo/components/SommWidget.jsx";
+
+
 
 
 
@@ -64,7 +70,7 @@ var WidgetToggle = styled_components__WEBPACK_IMPORTED_MODULE_9___default()(func
   return react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(PosedWidgetToggle, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_5__["default"])({}, props, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 29
+      lineNumber: 31
     },
     __self: this
   }));
@@ -117,23 +123,17 @@ var WidgetToggleIcon = react_pose__WEBPACK_IMPORTED_MODULE_8___default.a.div({
 var StyledWidgetToggleIcon = styled_components__WEBPACK_IMPORTED_MODULE_9___default()(WidgetToggleIcon).withConfig({
   displayName: "SommWidget__StyledWidgetToggleIcon",
   componentId: "i7qmkt-3"
-})(["width:24px;height:24px;display:flex;align-items:center;justify-content:center;opacity:1;& svg{fill:", ";transform:scale(", ");}"], function (props) {
+})(["width:24px;height:24px;display:flex;align-items:center;justify-content:center;scale:1;opacity:1;& svg{fill:", ";width:32px;height:32px;}"], function (props) {
   return props.iconColor;
-}, function (props) {
-  return props.role === "close" ? '1.3' : '1.2';
 });
-var WidgetToggleIconEmoji = styled_components__WEBPACK_IMPORTED_MODULE_9___default.a.span.withConfig({
-  displayName: "SommWidget__WidgetToggleIconEmoji",
-  componentId: "i7qmkt-4"
-})(["font-size:1.75rem;line-height:1.5rem;padding-top:4px;"]);
 var spinnerAnimation = Object(styled_components__WEBPACK_IMPORTED_MODULE_9__["keyframes"])(["0%{top:28px;left:28px;width:0;height:0;opacity:1;}100%{top:-1px;left:-1px;width:58px;height:58px;opacity:0;}"]);
 var SpinnerWrapper = styled_components__WEBPACK_IMPORTED_MODULE_9___default.a.div.withConfig({
   displayName: "SommWidget__SpinnerWrapper",
-  componentId: "i7qmkt-5"
-})(["width:100%;height:100%;position:absolute;display:flex;align-items:center;justify-content:center;z-index:1;top:0;right:0;bottom:0;left:0;-webkit-overflow-scrolling:touch;overflow-y:scroll;border-radius:8px;& iframe{border-radius:8px;}"]);
+  componentId: "i7qmkt-4"
+})(["width:100%;height:100%;position:absolute;display:flex;align-items:center;justify-content:center;z-index:1;top:0;right:0;bottom:0;left:0;-webkit-overflow-scrolling:touch;overflow-y:", ";border-radius:8px;& iframe{border-radius:8px;}"], is_mobile__WEBPACK_IMPORTED_MODULE_11___default()() ? 'scroll' : 'hidden');
 var Spinner = styled_components__WEBPACK_IMPORTED_MODULE_9___default.a.div.withConfig({
   displayName: "SommWidget__Spinner",
-  componentId: "i7qmkt-6"
+  componentId: "i7qmkt-5"
 })(["display:inline-flex;position:relative;width:64px;height:64px;& div{position:absolute;border:4px solid ", ";opacity:1;border-radius:50%;animation:", " 1.5s cubic-bezier(0,0.2,0.8,1) infinite}& div:nth-child(2){animation-delay:-0.5s;}"], function (props) {
   return props.color;
 }, spinnerAnimation);
@@ -156,14 +156,18 @@ var WidgetMessage = styled_components__WEBPACK_IMPORTED_MODULE_9___default()(fun
   return react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(PosedWidgetMessage, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_5__["default"])({}, props, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 188
+      lineNumber: 185
     },
     __self: this
   }));
 }).withConfig({
   displayName: "SommWidget__WidgetMessage",
+  componentId: "i7qmkt-6"
+})(["width:auto;max-width:224px;display:block;border:0;appearance:none;background:#FFFFFF;box-shadow:0 2px 16px -2px rgba(0,0,0,0.32);border-radius:8px;overflow:hidden;position:absolute;bottom:64px;right:0;scale:1;opacity:1;transform-origin:bottom right;padding:16px;box-sizing:border-box;display:flex;align-items:center;font-family:'Montserrat',sans-serif;font-weight:700;color:#1f1f1f;font-size:1rem;white-space:pre;"]);
+var WidgetToggleIconEmoji = styled_components__WEBPACK_IMPORTED_MODULE_9___default.a.span.withConfig({
+  displayName: "SommWidget__WidgetToggleIconEmoji",
   componentId: "i7qmkt-7"
-})(["width:224px;display:block;border:0;appearance:none;background:#FFFFFF;box-shadow:0 2px 16px -2px rgba(0,0,0,0.32);border-radius:8px;overflow:hidden;position:absolute;bottom:64px;right:0;scale:1;opacity:1;transform-origin:bottom right;padding:16px;box-sizing:border-box;display:flex;align-items:center;font-weight:700;color:#1f1f1f;font-size:1rem;"]);
+})(["font-size:1.75rem;line-height:1.5rem;padding-top:4px;"]);
 
 var Widget =
 /*#__PURE__*/
@@ -194,11 +198,12 @@ function (_Component) {
 
       var test = vh_check__WEBPACK_IMPORTED_MODULE_10___default()();
       console.log(test);
+      console.log(is_mobile__WEBPACK_IMPORTED_MODULE_11___default()());
       return react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(WidgetContainer, {
         position: this.props.position,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 233
+          lineNumber: 240
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(react_pose__WEBPACK_IMPORTED_MODULE_8__["PoseGroup"], {
@@ -206,20 +211,20 @@ function (_Component) {
         preEnterPose: "init",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 234
+          lineNumber: 241
         },
         __self: this
       }, this.state.messageVisible && !this.state.hasOpened && react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(WidgetMessage, {
         key: "1",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 236
+          lineNumber: 243
         },
         __self: this
       }, this.props.message)), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(react_pose__WEBPACK_IMPORTED_MODULE_8__["PoseGroup"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 241
+          lineNumber: 248
         },
         __self: this
       }, this.state.open && react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(StyledWidgetFrame, {
@@ -228,13 +233,13 @@ function (_Component) {
         position: this.props.position,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 243
+          lineNumber: 250
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(SpinnerWrapper, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 244
+          lineNumber: 251
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("iframe", {
@@ -253,26 +258,26 @@ function (_Component) {
         frameBorder: "0",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 245
+          lineNumber: 252
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(Spinner, {
         color: this.props.iconColor,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 253
+          lineNumber: 260
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 254
+          lineNumber: 261
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 255
+          lineNumber: 262
         },
         __self: this
       }))))), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(react_pose__WEBPACK_IMPORTED_MODULE_8__["PoseGroup"], {
@@ -280,7 +285,7 @@ function (_Component) {
         preEnterPose: "init",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 262
+          lineNumber: 269
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(WidgetToggle, {
@@ -294,100 +299,82 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 263
+          lineNumber: 270
         },
         __self: this
       }, this.state.open ? react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(StyledWidgetToggleIcon, {
         iconColor: this.props.iconColor,
-        role: "close",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 266
+          lineNumber: 273
         },
         __self: this
-      }, this.props.icon === "sharp" ? react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("svg", {
-        width: "24",
-        height: "24",
-        viewBox: "0 0 24 24",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 269
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("path", {
-        d: "M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 270
-        },
-        __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("path", {
-        d: "M0 0h24v24H0z",
-        fill: "none",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 271
-        },
-        __self: this
-      })) : react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("svg", {
-        width: "24",
-        height: "24",
-        viewBox: "0 0 24 24",
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("svg", {
+        fill: this.props.iconColor,
+        width: "18px",
+        height: "18px",
+        viewBox: "0 0 16 16",
+        version: "1.1",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 274
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("path", {
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("g", {
+        id: "Page-4",
+        stroke: "none",
+        strokeWidth: "1",
         fill: "none",
-        d: "M0 0h24v24H0V0z",
+        fillRule: "evenodd",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 275
         },
         __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("path", {
-        d: "M18.3 5.71c-.39-.39-1.02-.39-1.41 0L12 10.59 7.11 5.7c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41L10.59 12 5.7 16.89c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0L12 13.41l4.89 4.89c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L13.41 12l4.89-4.89c.38-.38.38-1.02 0-1.4z",
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("g", {
+        id: "Search",
+        transform: "translate(-46.000000, -45.000000)",
+        fill: this.props.iconColor,
+        fillRule: "nonzero",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 276
         },
         __self: this
-      }))) : react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(StyledWidgetToggleIcon, {
-        iconColor: this.props.iconColor,
-        role: "open",
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("g", {
+        id: "Group",
+        transform: "translate(32.000000, 32.000000)",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 281
+          lineNumber: 277
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("g", {
+        id: "Group-2",
+        transform: "translate(14.000000, 11.000000)",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 278
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("polygon", {
+        id: "Shape",
+        points: "15.5555556 3.56666667 13.9888889 2 7.77777778 8.21111111 1.56666667 2 0 3.56666667 6.21111111 9.77777778 0 15.9888889 1.56666667 17.5555556 7.77777778 11.3444444 13.9888889 17.5555556 15.5555556 15.9888889 9.34444444 9.77777778",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 279
+        },
+        __self: this
+      }))))))) : react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(StyledWidgetToggleIcon, {
+        iconColor: this.props.iconColor,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 287
         },
         __self: this
       }, this.props.icon === "rounded" && react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("svg", {
         width: "24",
         height: "24",
-        viewBox: "0 0 24 24",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 283
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("path", {
-        fill: "none",
-        d: "M0 0h24v24H0V0z",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 284
-        },
-        __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("path", {
-        d: "M8.1 13.34l2.83-2.83-6.19-6.18c-.48-.48-1.31-.35-1.61.27-.71 1.49-.45 3.32.78 4.56l4.19 4.18zm6.78-1.81c1.53.71 3.68.21 5.27-1.38 1.91-1.91 2.28-4.65.81-6.12-1.46-1.46-4.2-1.1-6.12.81-1.59 1.59-2.09 3.74-1.38 5.27L4.4 19.17c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0L12 14.41l6.18 6.18c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L13.41 13l1.47-1.47z",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 285
-        },
-        __self: this
-      })), this.props.icon === "sharp" && react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("svg", {
-        width: "24px",
-        height: "24px",
         viewBox: "0 0 24 24",
         __source: {
           fileName: _jsxFileName,
@@ -403,19 +390,50 @@ function (_Component) {
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("path", {
-        d: "M8.1 13.34l2.83-2.83L3.91 3.5c-1.56 1.56-1.56 4.09 0 5.66l4.19 4.18zm6.78-1.81c1.53.71 3.68.21 5.27-1.38 1.91-1.91 2.28-4.65.81-6.12-1.46-1.46-4.2-1.1-6.12.81-1.59 1.59-2.09 3.74-1.38 5.27L3.7 19.87l1.41 1.41L12 14.41l6.88 6.88 1.41-1.41L13.41 13l1.47-1.47z",
+        d: "M8.1 13.34l2.83-2.83-6.19-6.18c-.48-.48-1.31-.35-1.61.27-.71 1.49-.45 3.32.78 4.56l4.19 4.18zm6.78-1.81c1.53.71 3.68.21 5.27-1.38 1.91-1.91 2.28-4.65.81-6.12-1.46-1.46-4.2-1.1-6.12.81-1.59 1.59-2.09 3.74-1.38 5.27L4.4 19.17c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0L12 14.41l6.18 6.18c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L13.41 13l1.47-1.47z",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 291
         },
         __self: this
-      })), this.props.icon === "emoji" && react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(WidgetToggleIconEmoji, {
+      })), this.props.icon === "sharp" && react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("svg", {
+        width: "24px",
+        height: "24px",
+        viewBox: "0 0 24 24",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 295
         },
         __self: this
-      }, "\uD83C\uDF7D\uFE0F")))));
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("path", {
+        fill: "none",
+        d: "M0 0h24v24H0V0z",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 296
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("path", {
+        d: "M8.1 13.34l2.83-2.83L3.91 3.5c-1.56 1.56-1.56 4.09 0 5.66l4.19 4.18zm6.78-1.81c1.53.71 3.68.21 5.27-1.38 1.91-1.91 2.28-4.65.81-6.12-1.46-1.46-4.2-1.1-6.12.81-1.59 1.59-2.09 3.74-1.38 5.27L3.7 19.87l1.41 1.41L12 14.41l6.88 6.88 1.41-1.41L13.41 13l1.47-1.47z",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 297
+        },
+        __self: this
+      })), this.props.icon === "emoji" && react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(WidgetToggleIconEmoji, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 301
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(react_emoji_render__WEBPACK_IMPORTED_MODULE_12___default.a, {
+        text: "\uD83C\uDF7D",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 301
+        },
+        __self: this
+      }))))));
     }
   }]);
 

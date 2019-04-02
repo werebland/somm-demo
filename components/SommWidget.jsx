@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 import posed, {PoseGroup} from 'react-pose'
 import styled, { keyframes } from 'styled-components';
 import vhCheck from 'vh-check'
+import mobile from 'is-mobile'
+import Emoji from 'react-emoji-render';
 
 const WidgetContainer = styled.div`
   position: fixed;
@@ -97,19 +99,14 @@ const StyledWidgetToggleIcon = styled(WidgetToggleIcon)`
   display: flex;
   align-items: center;
   justify-content: center;
-
+  scale: 1;
   opacity: 1;
 
   & svg {
     fill: ${props => props.iconColor};
-    transform: scale(${props => props.role === "close" ? '1.3' : '1.2'});
+    width: 32px;
+    height: 32px;
   }
-`;
-
-const WidgetToggleIconEmoji = styled.span`
-  font-size: 1.75rem;
-  line-height: 1.5rem;
-  padding-top: 4px;
 `;
 
 const spinnerAnimation = keyframes`
@@ -142,7 +139,7 @@ const SpinnerWrapper = styled.div`
   bottom: 0;
   left: 0;
   -webkit-overflow-scrolling: touch;
-  overflow-y: scroll;
+  overflow-y: ${mobile() ? 'scroll' : 'hidden'};
   border-radius: 8px;
 
   & iframe {
@@ -186,7 +183,8 @@ const PosedWidgetMessage = posed.div({
 })
 
 const WidgetMessage = styled((props) => <PosedWidgetMessage {...props} />)`
-  width: 224px;
+  width: auto;
+  max-width: 224px;
   display: block;
   border: 0;
   appearance: none;
@@ -204,9 +202,17 @@ const WidgetMessage = styled((props) => <PosedWidgetMessage {...props} />)`
   box-sizing: border-box;
   display: flex;
   align-items: center;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   color: #1f1f1f;
   font-size: 1rem;
+  white-space: pre;
+`;
+
+const WidgetToggleIconEmoji = styled.span`
+  font-size: 1.75rem;
+  line-height: 1.5rem;
+  padding-top: 4px;
 `;
 
 class Widget extends Component {
@@ -228,6 +234,7 @@ class Widget extends Component {
 
     var test = vhCheck()
     console.log(test);
+    console.log(mobile());
 
     return (
       <WidgetContainer position={this.props.position}>
@@ -263,22 +270,21 @@ class Widget extends Component {
           <WidgetToggle key="-1" background={this.props.backgroundColor} onClick={() => this.setState({ open: !this.state.open, hasOpened: true })}>
               {this.state.open
                 ?
-                  <StyledWidgetToggleIcon iconColor={this.props.iconColor} role="close">
-                    {this.props.icon === "sharp"
-                      ?
-                      <svg width="24" height="24" viewBox="0 0 24 24">
-                        <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
-                        <path d="M0 0h24v24H0z" fill="none"/>
-                      </svg>
-                      :
-                      <svg width="24" height="24" viewBox="0 0 24 24">
-                        <path fill="none" d="M0 0h24v24H0V0z"/>
-                        <path d="M18.3 5.71c-.39-.39-1.02-.39-1.41 0L12 10.59 7.11 5.7c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41L10.59 12 5.7 16.89c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0L12 13.41l4.89 4.89c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L13.41 12l4.89-4.89c.38-.38.38-1.02 0-1.4z"/>
-                      </svg>
-                    }
+                  <StyledWidgetToggleIcon iconColor={this.props.iconColor}>
+                    <svg fill={this.props.iconColor} width="18px" height="18px" viewBox="0 0 16 16" version="1.1">
+                        <g id="Page-4" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
+                            <g id="Search" transform="translate(-46.000000, -45.000000)" fill={this.props.iconColor} fillRule="nonzero">
+                                <g id="Group" transform="translate(32.000000, 32.000000)">
+                                    <g id="Group-2" transform="translate(14.000000, 11.000000)">
+                                        <polygon id="Shape" points="15.5555556 3.56666667 13.9888889 2 7.77777778 8.21111111 1.56666667 2 0 3.56666667 6.21111111 9.77777778 0 15.9888889 1.56666667 17.5555556 7.77777778 11.3444444 13.9888889 17.5555556 15.5555556 15.9888889 9.34444444 9.77777778"></polygon>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
                   </StyledWidgetToggleIcon>
                 :
-                  <StyledWidgetToggleIcon iconColor={this.props.iconColor} role="open">
+                  <StyledWidgetToggleIcon iconColor={this.props.iconColor}>
                     {this.props.icon === "rounded" &&
                       <svg width="24" height="24" viewBox="0 0 24 24">
                         <path fill="none" d="M0 0h24v24H0V0z"/>
@@ -292,7 +298,7 @@ class Widget extends Component {
                       </svg>
                     }
                     {this.props.icon === "emoji" &&
-                      <WidgetToggleIconEmoji>🍽️</WidgetToggleIconEmoji>
+                      <WidgetToggleIconEmoji><Emoji text="🍽"/></WidgetToggleIconEmoji>
                     }
                   </StyledWidgetToggleIcon>
               }

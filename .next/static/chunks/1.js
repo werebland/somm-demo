@@ -23,6 +23,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 /* harmony import */ var vh_check__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! vh-check */ "./node_modules/vh-check/dist/vh-check.js");
 /* harmony import */ var vh_check__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(vh_check__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var is_mobile__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! is-mobile */ "./node_modules/is-mobile/index.js");
+/* harmony import */ var is_mobile__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(is_mobile__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var react_emoji_render__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! react-emoji-render */ "./node_modules/react-emoji-render/lib/index.js");
+/* harmony import */ var react_emoji_render__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(react_emoji_render__WEBPACK_IMPORTED_MODULE_12__);
 
 
 
@@ -30,6 +34,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var _jsxFileName = "/Users/Chris/somm-demo/components/SommWidget.jsx";
+
+
 
 
 
@@ -61,7 +67,7 @@ var WidgetToggle = Object(styled_components__WEBPACK_IMPORTED_MODULE_9__["defaul
   return react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(PosedWidgetToggle, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_5__["default"])({}, props, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 29
+      lineNumber: 31
     },
     __self: this
   }));
@@ -114,23 +120,17 @@ var WidgetToggleIcon = react_pose__WEBPACK_IMPORTED_MODULE_8__["default"].div({
 var StyledWidgetToggleIcon = Object(styled_components__WEBPACK_IMPORTED_MODULE_9__["default"])(WidgetToggleIcon).withConfig({
   displayName: "SommWidget__StyledWidgetToggleIcon",
   componentId: "i7qmkt-3"
-})(["width:24px;height:24px;display:flex;align-items:center;justify-content:center;opacity:1;& svg{fill:", ";transform:scale(", ");}"], function (props) {
+})(["width:24px;height:24px;display:flex;align-items:center;justify-content:center;scale:1;opacity:1;& svg{fill:", ";width:32px;height:32px;}"], function (props) {
   return props.iconColor;
-}, function (props) {
-  return props.role === "close" ? '1.3' : '1.2';
 });
-var WidgetToggleIconEmoji = styled_components__WEBPACK_IMPORTED_MODULE_9__["default"].span.withConfig({
-  displayName: "SommWidget__WidgetToggleIconEmoji",
-  componentId: "i7qmkt-4"
-})(["font-size:1.75rem;line-height:1.5rem;padding-top:4px;"]);
 var spinnerAnimation = Object(styled_components__WEBPACK_IMPORTED_MODULE_9__["keyframes"])(["0%{top:28px;left:28px;width:0;height:0;opacity:1;}100%{top:-1px;left:-1px;width:58px;height:58px;opacity:0;}"]);
 var SpinnerWrapper = styled_components__WEBPACK_IMPORTED_MODULE_9__["default"].div.withConfig({
   displayName: "SommWidget__SpinnerWrapper",
-  componentId: "i7qmkt-5"
-})(["width:100%;height:100%;position:absolute;display:flex;align-items:center;justify-content:center;z-index:1;top:0;right:0;bottom:0;left:0;-webkit-overflow-scrolling:touch;overflow-y:scroll;border-radius:8px;& iframe{border-radius:8px;}"]);
+  componentId: "i7qmkt-4"
+})(["width:100%;height:100%;position:absolute;display:flex;align-items:center;justify-content:center;z-index:1;top:0;right:0;bottom:0;left:0;-webkit-overflow-scrolling:touch;overflow-y:", ";border-radius:8px;& iframe{border-radius:8px;}"], is_mobile__WEBPACK_IMPORTED_MODULE_11___default()() ? 'scroll' : 'hidden');
 var Spinner = styled_components__WEBPACK_IMPORTED_MODULE_9__["default"].div.withConfig({
   displayName: "SommWidget__Spinner",
-  componentId: "i7qmkt-6"
+  componentId: "i7qmkt-5"
 })(["display:inline-flex;position:relative;width:64px;height:64px;& div{position:absolute;border:4px solid ", ";opacity:1;border-radius:50%;animation:", " 1.5s cubic-bezier(0,0.2,0.8,1) infinite}& div:nth-child(2){animation-delay:-0.5s;}"], function (props) {
   return props.color;
 }, spinnerAnimation);
@@ -153,14 +153,18 @@ var WidgetMessage = Object(styled_components__WEBPACK_IMPORTED_MODULE_9__["defau
   return react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(PosedWidgetMessage, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_5__["default"])({}, props, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 188
+      lineNumber: 185
     },
     __self: this
   }));
 }).withConfig({
   displayName: "SommWidget__WidgetMessage",
+  componentId: "i7qmkt-6"
+})(["width:auto;max-width:224px;display:block;border:0;appearance:none;background:#FFFFFF;box-shadow:0 2px 16px -2px rgba(0,0,0,0.32);border-radius:8px;overflow:hidden;position:absolute;bottom:64px;right:0;scale:1;opacity:1;transform-origin:bottom right;padding:16px;box-sizing:border-box;display:flex;align-items:center;font-family:'Montserrat',sans-serif;font-weight:700;color:#1f1f1f;font-size:1rem;white-space:pre;"]);
+var WidgetToggleIconEmoji = styled_components__WEBPACK_IMPORTED_MODULE_9__["default"].span.withConfig({
+  displayName: "SommWidget__WidgetToggleIconEmoji",
   componentId: "i7qmkt-7"
-})(["width:224px;display:block;border:0;appearance:none;background:#FFFFFF;box-shadow:0 2px 16px -2px rgba(0,0,0,0.32);border-radius:8px;overflow:hidden;position:absolute;bottom:64px;right:0;scale:1;opacity:1;transform-origin:bottom right;padding:16px;box-sizing:border-box;display:flex;align-items:center;font-weight:700;color:#1f1f1f;font-size:1rem;"]);
+})(["font-size:1.75rem;line-height:1.5rem;padding-top:4px;"]);
 
 var Widget =
 /*#__PURE__*/
@@ -191,11 +195,12 @@ function (_Component) {
 
       var test = vh_check__WEBPACK_IMPORTED_MODULE_10___default()();
       console.log(test);
+      console.log(is_mobile__WEBPACK_IMPORTED_MODULE_11___default()());
       return react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(WidgetContainer, {
         position: this.props.position,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 233
+          lineNumber: 240
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(react_pose__WEBPACK_IMPORTED_MODULE_8__["PoseGroup"], {
@@ -203,20 +208,20 @@ function (_Component) {
         preEnterPose: "init",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 234
+          lineNumber: 241
         },
         __self: this
       }, this.state.messageVisible && !this.state.hasOpened && react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(WidgetMessage, {
         key: "1",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 236
+          lineNumber: 243
         },
         __self: this
       }, this.props.message)), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(react_pose__WEBPACK_IMPORTED_MODULE_8__["PoseGroup"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 241
+          lineNumber: 248
         },
         __self: this
       }, this.state.open && react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(StyledWidgetFrame, {
@@ -225,13 +230,13 @@ function (_Component) {
         position: this.props.position,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 243
+          lineNumber: 250
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(SpinnerWrapper, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 244
+          lineNumber: 251
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("iframe", {
@@ -250,26 +255,26 @@ function (_Component) {
         frameBorder: "0",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 245
+          lineNumber: 252
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(Spinner, {
         color: this.props.iconColor,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 253
+          lineNumber: 260
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 254
+          lineNumber: 261
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 255
+          lineNumber: 262
         },
         __self: this
       }))))), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(react_pose__WEBPACK_IMPORTED_MODULE_8__["PoseGroup"], {
@@ -277,7 +282,7 @@ function (_Component) {
         preEnterPose: "init",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 262
+          lineNumber: 269
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(WidgetToggle, {
@@ -291,100 +296,82 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 263
+          lineNumber: 270
         },
         __self: this
       }, this.state.open ? react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(StyledWidgetToggleIcon, {
         iconColor: this.props.iconColor,
-        role: "close",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 266
+          lineNumber: 273
         },
         __self: this
-      }, this.props.icon === "sharp" ? react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("svg", {
-        width: "24",
-        height: "24",
-        viewBox: "0 0 24 24",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 269
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("path", {
-        d: "M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 270
-        },
-        __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("path", {
-        d: "M0 0h24v24H0z",
-        fill: "none",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 271
-        },
-        __self: this
-      })) : react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("svg", {
-        width: "24",
-        height: "24",
-        viewBox: "0 0 24 24",
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("svg", {
+        fill: this.props.iconColor,
+        width: "18px",
+        height: "18px",
+        viewBox: "0 0 16 16",
+        version: "1.1",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 274
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("path", {
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("g", {
+        id: "Page-4",
+        stroke: "none",
+        strokeWidth: "1",
         fill: "none",
-        d: "M0 0h24v24H0V0z",
+        fillRule: "evenodd",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 275
         },
         __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("path", {
-        d: "M18.3 5.71c-.39-.39-1.02-.39-1.41 0L12 10.59 7.11 5.7c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41L10.59 12 5.7 16.89c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0L12 13.41l4.89 4.89c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L13.41 12l4.89-4.89c.38-.38.38-1.02 0-1.4z",
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("g", {
+        id: "Search",
+        transform: "translate(-46.000000, -45.000000)",
+        fill: this.props.iconColor,
+        fillRule: "nonzero",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 276
         },
         __self: this
-      }))) : react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(StyledWidgetToggleIcon, {
-        iconColor: this.props.iconColor,
-        role: "open",
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("g", {
+        id: "Group",
+        transform: "translate(32.000000, 32.000000)",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 281
+          lineNumber: 277
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("g", {
+        id: "Group-2",
+        transform: "translate(14.000000, 11.000000)",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 278
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("polygon", {
+        id: "Shape",
+        points: "15.5555556 3.56666667 13.9888889 2 7.77777778 8.21111111 1.56666667 2 0 3.56666667 6.21111111 9.77777778 0 15.9888889 1.56666667 17.5555556 7.77777778 11.3444444 13.9888889 17.5555556 15.5555556 15.9888889 9.34444444 9.77777778",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 279
+        },
+        __self: this
+      }))))))) : react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(StyledWidgetToggleIcon, {
+        iconColor: this.props.iconColor,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 287
         },
         __self: this
       }, this.props.icon === "rounded" && react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("svg", {
         width: "24",
         height: "24",
-        viewBox: "0 0 24 24",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 283
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("path", {
-        fill: "none",
-        d: "M0 0h24v24H0V0z",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 284
-        },
-        __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("path", {
-        d: "M8.1 13.34l2.83-2.83-6.19-6.18c-.48-.48-1.31-.35-1.61.27-.71 1.49-.45 3.32.78 4.56l4.19 4.18zm6.78-1.81c1.53.71 3.68.21 5.27-1.38 1.91-1.91 2.28-4.65.81-6.12-1.46-1.46-4.2-1.1-6.12.81-1.59 1.59-2.09 3.74-1.38 5.27L4.4 19.17c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0L12 14.41l6.18 6.18c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L13.41 13l1.47-1.47z",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 285
-        },
-        __self: this
-      })), this.props.icon === "sharp" && react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("svg", {
-        width: "24px",
-        height: "24px",
         viewBox: "0 0 24 24",
         __source: {
           fileName: _jsxFileName,
@@ -400,19 +387,50 @@ function (_Component) {
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("path", {
-        d: "M8.1 13.34l2.83-2.83L3.91 3.5c-1.56 1.56-1.56 4.09 0 5.66l4.19 4.18zm6.78-1.81c1.53.71 3.68.21 5.27-1.38 1.91-1.91 2.28-4.65.81-6.12-1.46-1.46-4.2-1.1-6.12.81-1.59 1.59-2.09 3.74-1.38 5.27L3.7 19.87l1.41 1.41L12 14.41l6.88 6.88 1.41-1.41L13.41 13l1.47-1.47z",
+        d: "M8.1 13.34l2.83-2.83-6.19-6.18c-.48-.48-1.31-.35-1.61.27-.71 1.49-.45 3.32.78 4.56l4.19 4.18zm6.78-1.81c1.53.71 3.68.21 5.27-1.38 1.91-1.91 2.28-4.65.81-6.12-1.46-1.46-4.2-1.1-6.12.81-1.59 1.59-2.09 3.74-1.38 5.27L4.4 19.17c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0L12 14.41l6.18 6.18c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L13.41 13l1.47-1.47z",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 291
         },
         __self: this
-      })), this.props.icon === "emoji" && react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(WidgetToggleIconEmoji, {
+      })), this.props.icon === "sharp" && react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("svg", {
+        width: "24px",
+        height: "24px",
+        viewBox: "0 0 24 24",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 295
         },
         __self: this
-      }, "\uD83C\uDF7D\uFE0F")))));
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("path", {
+        fill: "none",
+        d: "M0 0h24v24H0V0z",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 296
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("path", {
+        d: "M8.1 13.34l2.83-2.83L3.91 3.5c-1.56 1.56-1.56 4.09 0 5.66l4.19 4.18zm6.78-1.81c1.53.71 3.68.21 5.27-1.38 1.91-1.91 2.28-4.65.81-6.12-1.46-1.46-4.2-1.1-6.12.81-1.59 1.59-2.09 3.74-1.38 5.27L3.7 19.87l1.41 1.41L12 14.41l6.88 6.88 1.41-1.41L13.41 13l1.47-1.47z",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 297
+        },
+        __self: this
+      })), this.props.icon === "emoji" && react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(WidgetToggleIconEmoji, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 301
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(react_emoji_render__WEBPACK_IMPORTED_MODULE_12___default.a, {
+        text: "\uD83C\uDF7D",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 301
+        },
+        __self: this
+      }))))));
     }
   }]);
 
@@ -1080,6 +1098,87 @@ var steps = (function (steps, direction) {
 
 /***/ }),
 
+/***/ "./node_modules/classnames/index.js":
+/*!******************************************!*\
+  !*** ./node_modules/classnames/index.js ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
+  Copyright (c) 2017 Jed Watson.
+  Licensed under the MIT License (MIT), see
+  http://jedwatson.github.io/classnames
+*/
+/* global define */
+
+(function () {
+	'use strict';
+
+	var hasOwn = {}.hasOwnProperty;
+
+	function classNames () {
+		var classes = [];
+
+		for (var i = 0; i < arguments.length; i++) {
+			var arg = arguments[i];
+			if (!arg) continue;
+
+			var argType = typeof arg;
+
+			if (argType === 'string' || argType === 'number') {
+				classes.push(arg);
+			} else if (Array.isArray(arg) && arg.length) {
+				var inner = classNames.apply(null, arg);
+				if (inner) {
+					classes.push(inner);
+				}
+			} else if (argType === 'object') {
+				for (var key in arg) {
+					if (hasOwn.call(arg, key) && arg[key]) {
+						classes.push(key);
+					}
+				}
+			}
+		}
+
+		return classes.join(' ');
+	}
+
+	if ( true && module.exports) {
+		classNames.default = classNames;
+		module.exports = classNames;
+	} else if (true) {
+		// register as 'classnames', consistent with npm package name
+		!(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = (function () {
+			return classNames;
+		}).apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+	} else {}
+}());
+
+
+/***/ }),
+
+/***/ "./node_modules/emoji-regex/index.js":
+/*!*******************************************!*\
+  !*** ./node_modules/emoji-regex/index.js ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+module.exports = function () {
+	// https://mathiasbynens.be/notes/es-unicode-property-escapes#emoji
+	return (/\uD83C\uDFF4\uDB40\uDC67\uDB40\uDC62(?:\uDB40\uDC65\uDB40\uDC6E\uDB40\uDC67|\uDB40\uDC77\uDB40\uDC6C\uDB40\uDC73|\uDB40\uDC73\uDB40\uDC63\uDB40\uDC74)\uDB40\uDC7F|\uD83D\uDC69\u200D\uD83D\uDC69\u200D(?:\uD83D\uDC66\u200D\uD83D\uDC66|\uD83D\uDC67\u200D(?:\uD83D[\uDC66\uDC67]))|\uD83D\uDC68(?:\u200D(?:\u2764\uFE0F\u200D(?:\uD83D\uDC8B\u200D)?\uD83D\uDC68|(?:\uD83D[\uDC68\uDC69])\u200D(?:\uD83D\uDC66\u200D\uD83D\uDC66|\uD83D\uDC67\u200D(?:\uD83D[\uDC66\uDC67]))|\uD83D\uDC66\u200D\uD83D\uDC66|\uD83D\uDC67\u200D(?:\uD83D[\uDC66\uDC67])|[\u2695\u2696\u2708]\uFE0F|\uD83C[\uDF3E\uDF73\uDF93\uDFA4\uDFA8\uDFEB\uDFED]|\uD83D[\uDCBB\uDCBC\uDD27\uDD2C\uDE80\uDE92])|(?:\uD83C[\uDFFB-\uDFFF])\u200D[\u2695\u2696\u2708]\uFE0F|(?:\uD83C[\uDFFB-\uDFFF])\u200D(?:\uD83C[\uDF3E\uDF73\uDF93\uDFA4\uDFA8\uDFEB\uDFED]|\uD83D[\uDCBB\uDCBC\uDD27\uDD2C\uDE80\uDE92]))|\uD83D\uDC69\u200D(?:\u2764\uFE0F\u200D(?:\uD83D\uDC8B\u200D(?:\uD83D[\uDC68\uDC69])|\uD83D[\uDC68\uDC69])|\uD83C[\uDF3E\uDF73\uDF93\uDFA4\uDFA8\uDFEB\uDFED]|\uD83D[\uDCBB\uDCBC\uDD27\uDD2C\uDE80\uDE92])|\uD83D\uDC69\u200D\uD83D\uDC66\u200D\uD83D\uDC66|(?:\uD83D\uDC41\uFE0F\u200D\uD83D\uDDE8|\uD83D\uDC69(?:\uD83C[\uDFFB-\uDFFF])\u200D[\u2695\u2696\u2708]|(?:(?:\u26F9|\uD83C[\uDFCB\uDFCC]|\uD83D\uDD75)\uFE0F|\uD83D\uDC6F|\uD83E[\uDD3C\uDDDE\uDDDF])\u200D[\u2640\u2642]|(?:\u26F9|\uD83C[\uDFCB\uDFCC]|\uD83D\uDD75)(?:\uD83C[\uDFFB-\uDFFF])\u200D[\u2640\u2642]|(?:\uD83C[\uDFC3\uDFC4\uDFCA]|\uD83D[\uDC6E\uDC71\uDC73\uDC77\uDC81\uDC82\uDC86\uDC87\uDE45-\uDE47\uDE4B\uDE4D\uDE4E\uDEA3\uDEB4-\uDEB6]|\uD83E[\uDD26\uDD37-\uDD39\uDD3D\uDD3E\uDDD6-\uDDDD])(?:(?:\uD83C[\uDFFB-\uDFFF])\u200D[\u2640\u2642]|\u200D[\u2640\u2642])|\uD83D\uDC69\u200D[\u2695\u2696\u2708])\uFE0F|\uD83D\uDC69\u200D\uD83D\uDC67\u200D(?:\uD83D[\uDC66\uDC67])|\uD83D\uDC69\u200D\uD83D\uDC69\u200D(?:\uD83D[\uDC66\uDC67])|\uD83D\uDC68(?:\u200D(?:(?:\uD83D[\uDC68\uDC69])\u200D(?:\uD83D[\uDC66\uDC67])|\uD83D[\uDC66\uDC67])|\uD83C[\uDFFB-\uDFFF])|\uD83C\uDFF3\uFE0F\u200D\uD83C\uDF08|\uD83D\uDC69\u200D\uD83D\uDC67|\uD83D\uDC69(?:\uD83C[\uDFFB-\uDFFF])\u200D(?:\uD83C[\uDF3E\uDF73\uDF93\uDFA4\uDFA8\uDFEB\uDFED]|\uD83D[\uDCBB\uDCBC\uDD27\uDD2C\uDE80\uDE92])|\uD83D\uDC69\u200D\uD83D\uDC66|\uD83C\uDDF4\uD83C\uDDF2|\uD83C\uDDFD\uD83C\uDDF0|\uD83C\uDDF6\uD83C\uDDE6|\uD83D\uDC69(?:\uD83C[\uDFFB-\uDFFF])|\uD83C\uDDFC(?:\uD83C[\uDDEB\uDDF8])|\uD83C\uDDEB(?:\uD83C[\uDDEE-\uDDF0\uDDF2\uDDF4\uDDF7])|\uD83C\uDDE9(?:\uD83C[\uDDEA\uDDEC\uDDEF\uDDF0\uDDF2\uDDF4\uDDFF])|\uD83C\uDDE7(?:\uD83C[\uDDE6\uDDE7\uDDE9-\uDDEF\uDDF1-\uDDF4\uDDF6-\uDDF9\uDDFB\uDDFC\uDDFE\uDDFF])|\uD83C\uDDF1(?:\uD83C[\uDDE6-\uDDE8\uDDEE\uDDF0\uDDF7-\uDDFB\uDDFE])|\uD83C\uDDFE(?:\uD83C[\uDDEA\uDDF9])|\uD83C\uDDF9(?:\uD83C[\uDDE6\uDDE8\uDDE9\uDDEB-\uDDED\uDDEF-\uDDF4\uDDF7\uDDF9\uDDFB\uDDFC\uDDFF])|\uD83C\uDDF5(?:\uD83C[\uDDE6\uDDEA-\uDDED\uDDF0-\uDDF3\uDDF7-\uDDF9\uDDFC\uDDFE])|\uD83C\uDDEF(?:\uD83C[\uDDEA\uDDF2\uDDF4\uDDF5])|\uD83C\uDDED(?:\uD83C[\uDDF0\uDDF2\uDDF3\uDDF7\uDDF9\uDDFA])|\uD83C\uDDEE(?:\uD83C[\uDDE8-\uDDEA\uDDF1-\uDDF4\uDDF6-\uDDF9])|\uD83C\uDDFB(?:\uD83C[\uDDE6\uDDE8\uDDEA\uDDEC\uDDEE\uDDF3\uDDFA])|\uD83C\uDDEC(?:\uD83C[\uDDE6\uDDE7\uDDE9-\uDDEE\uDDF1-\uDDF3\uDDF5-\uDDFA\uDDFC\uDDFE])|\uD83C\uDDF7(?:\uD83C[\uDDEA\uDDF4\uDDF8\uDDFA\uDDFC])|\uD83C\uDDEA(?:\uD83C[\uDDE6\uDDE8\uDDEA\uDDEC\uDDED\uDDF7-\uDDFA])|\uD83C\uDDFA(?:\uD83C[\uDDE6\uDDEC\uDDF2\uDDF3\uDDF8\uDDFE\uDDFF])|\uD83C\uDDE8(?:\uD83C[\uDDE6\uDDE8\uDDE9\uDDEB-\uDDEE\uDDF0-\uDDF5\uDDF7\uDDFA-\uDDFF])|\uD83C\uDDE6(?:\uD83C[\uDDE8-\uDDEC\uDDEE\uDDF1\uDDF2\uDDF4\uDDF6-\uDDFA\uDDFC\uDDFD\uDDFF])|[#\*0-9]\uFE0F\u20E3|\uD83C\uDDF8(?:\uD83C[\uDDE6-\uDDEA\uDDEC-\uDDF4\uDDF7-\uDDF9\uDDFB\uDDFD-\uDDFF])|\uD83C\uDDFF(?:\uD83C[\uDDE6\uDDF2\uDDFC])|\uD83C\uDDF0(?:\uD83C[\uDDEA\uDDEC-\uDDEE\uDDF2\uDDF3\uDDF5\uDDF7\uDDFC\uDDFE\uDDFF])|\uD83C\uDDF3(?:\uD83C[\uDDE6\uDDE8\uDDEA-\uDDEC\uDDEE\uDDF1\uDDF4\uDDF5\uDDF7\uDDFA\uDDFF])|\uD83C\uDDF2(?:\uD83C[\uDDE6\uDDE8-\uDDED\uDDF0-\uDDFF])|(?:\uD83C[\uDFC3\uDFC4\uDFCA]|\uD83D[\uDC6E\uDC71\uDC73\uDC77\uDC81\uDC82\uDC86\uDC87\uDE45-\uDE47\uDE4B\uDE4D\uDE4E\uDEA3\uDEB4-\uDEB6]|\uD83E[\uDD26\uDD37-\uDD39\uDD3D\uDD3E\uDDD6-\uDDDD])(?:\uD83C[\uDFFB-\uDFFF])|(?:\u26F9|\uD83C[\uDFCB\uDFCC]|\uD83D\uDD75)(?:\uD83C[\uDFFB-\uDFFF])|(?:[\u261D\u270A-\u270D]|\uD83C[\uDF85\uDFC2\uDFC7]|\uD83D[\uDC42\uDC43\uDC46-\uDC50\uDC66\uDC67\uDC70\uDC72\uDC74-\uDC76\uDC78\uDC7C\uDC83\uDC85\uDCAA\uDD74\uDD7A\uDD90\uDD95\uDD96\uDE4C\uDE4F\uDEC0\uDECC]|\uD83E[\uDD18-\uDD1C\uDD1E\uDD1F\uDD30-\uDD36\uDDD1-\uDDD5])(?:\uD83C[\uDFFB-\uDFFF])|(?:[\u261D\u26F9\u270A-\u270D]|\uD83C[\uDF85\uDFC2-\uDFC4\uDFC7\uDFCA-\uDFCC]|\uD83D[\uDC42\uDC43\uDC46-\uDC50\uDC66-\uDC69\uDC6E\uDC70-\uDC78\uDC7C\uDC81-\uDC83\uDC85-\uDC87\uDCAA\uDD74\uDD75\uDD7A\uDD90\uDD95\uDD96\uDE45-\uDE47\uDE4B-\uDE4F\uDEA3\uDEB4-\uDEB6\uDEC0\uDECC]|\uD83E[\uDD18-\uDD1C\uDD1E\uDD1F\uDD26\uDD30-\uDD39\uDD3D\uDD3E\uDDD1-\uDDDD])(?:\uD83C[\uDFFB-\uDFFF])?|(?:[\u231A\u231B\u23E9-\u23EC\u23F0\u23F3\u25FD\u25FE\u2614\u2615\u2648-\u2653\u267F\u2693\u26A1\u26AA\u26AB\u26BD\u26BE\u26C4\u26C5\u26CE\u26D4\u26EA\u26F2\u26F3\u26F5\u26FA\u26FD\u2705\u270A\u270B\u2728\u274C\u274E\u2753-\u2755\u2757\u2795-\u2797\u27B0\u27BF\u2B1B\u2B1C\u2B50\u2B55]|\uD83C[\uDC04\uDCCF\uDD8E\uDD91-\uDD9A\uDDE6-\uDDFF\uDE01\uDE1A\uDE2F\uDE32-\uDE36\uDE38-\uDE3A\uDE50\uDE51\uDF00-\uDF20\uDF2D-\uDF35\uDF37-\uDF7C\uDF7E-\uDF93\uDFA0-\uDFCA\uDFCF-\uDFD3\uDFE0-\uDFF0\uDFF4\uDFF8-\uDFFF]|\uD83D[\uDC00-\uDC3E\uDC40\uDC42-\uDCFC\uDCFF-\uDD3D\uDD4B-\uDD4E\uDD50-\uDD67\uDD7A\uDD95\uDD96\uDDA4\uDDFB-\uDE4F\uDE80-\uDEC5\uDECC\uDED0-\uDED2\uDEEB\uDEEC\uDEF4-\uDEF8]|\uD83E[\uDD10-\uDD3A\uDD3C-\uDD3E\uDD40-\uDD45\uDD47-\uDD4C\uDD50-\uDD6B\uDD80-\uDD97\uDDC0\uDDD0-\uDDE6])|(?:[#\*0-9\xA9\xAE\u203C\u2049\u2122\u2139\u2194-\u2199\u21A9\u21AA\u231A\u231B\u2328\u23CF\u23E9-\u23F3\u23F8-\u23FA\u24C2\u25AA\u25AB\u25B6\u25C0\u25FB-\u25FE\u2600-\u2604\u260E\u2611\u2614\u2615\u2618\u261D\u2620\u2622\u2623\u2626\u262A\u262E\u262F\u2638-\u263A\u2640\u2642\u2648-\u2653\u2660\u2663\u2665\u2666\u2668\u267B\u267F\u2692-\u2697\u2699\u269B\u269C\u26A0\u26A1\u26AA\u26AB\u26B0\u26B1\u26BD\u26BE\u26C4\u26C5\u26C8\u26CE\u26CF\u26D1\u26D3\u26D4\u26E9\u26EA\u26F0-\u26F5\u26F7-\u26FA\u26FD\u2702\u2705\u2708-\u270D\u270F\u2712\u2714\u2716\u271D\u2721\u2728\u2733\u2734\u2744\u2747\u274C\u274E\u2753-\u2755\u2757\u2763\u2764\u2795-\u2797\u27A1\u27B0\u27BF\u2934\u2935\u2B05-\u2B07\u2B1B\u2B1C\u2B50\u2B55\u3030\u303D\u3297\u3299]|\uD83C[\uDC04\uDCCF\uDD70\uDD71\uDD7E\uDD7F\uDD8E\uDD91-\uDD9A\uDDE6-\uDDFF\uDE01\uDE02\uDE1A\uDE2F\uDE32-\uDE3A\uDE50\uDE51\uDF00-\uDF21\uDF24-\uDF93\uDF96\uDF97\uDF99-\uDF9B\uDF9E-\uDFF0\uDFF3-\uDFF5\uDFF7-\uDFFF]|\uD83D[\uDC00-\uDCFD\uDCFF-\uDD3D\uDD49-\uDD4E\uDD50-\uDD67\uDD6F\uDD70\uDD73-\uDD7A\uDD87\uDD8A-\uDD8D\uDD90\uDD95\uDD96\uDDA4\uDDA5\uDDA8\uDDB1\uDDB2\uDDBC\uDDC2-\uDDC4\uDDD1-\uDDD3\uDDDC-\uDDDE\uDDE1\uDDE3\uDDE8\uDDEF\uDDF3\uDDFA-\uDE4F\uDE80-\uDEC5\uDECB-\uDED2\uDEE0-\uDEE5\uDEE9\uDEEB\uDEEC\uDEF0\uDEF3-\uDEF8]|\uD83E[\uDD10-\uDD3A\uDD3C-\uDD3E\uDD40-\uDD45\uDD47-\uDD4C\uDD50-\uDD6B\uDD80-\uDD97\uDDC0\uDDD0-\uDDE6])\uFE0F/g
+	);
+};
+
+
+/***/ }),
+
 /***/ "./node_modules/framesync/dist/framesync.es.js":
 /*!*****************************************************!*\
   !*** ./node_modules/framesync/dist/framesync.es.js ***!
@@ -1263,6 +1362,568 @@ if (true) {
 }
 
 
+
+
+/***/ }),
+
+/***/ "./node_modules/invariant/browser.js":
+/*!*******************************************!*\
+  !*** ./node_modules/invariant/browser.js ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/**
+ * Copyright (c) 2013-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+
+
+/**
+ * Use invariant() to assert state which your program assumes to be true.
+ *
+ * Provide sprintf-style format (only %s is supported) and arguments
+ * to provide information about what broke and what you were
+ * expecting.
+ *
+ * The invariant message will be stripped in production, but the invariant
+ * will remain to ensure logic does not differ in production.
+ */
+
+var invariant = function(condition, format, a, b, c, d, e, f) {
+  if (true) {
+    if (format === undefined) {
+      throw new Error('invariant requires an error message argument');
+    }
+  }
+
+  if (!condition) {
+    var error;
+    if (format === undefined) {
+      error = new Error(
+        'Minified exception occurred; use the non-minified dev environment ' +
+        'for the full error message and additional helpful warnings.'
+      );
+    } else {
+      var args = [a, b, c, d, e, f];
+      var argIndex = 0;
+      error = new Error(
+        format.replace(/%s/g, function() { return args[argIndex++]; })
+      );
+      error.name = 'Invariant Violation';
+    }
+
+    error.framesToPop = 1; // we don't care about invariant's own frame
+    throw error;
+  }
+};
+
+module.exports = invariant;
+
+
+/***/ }),
+
+/***/ "./node_modules/is-mobile/index.js":
+/*!*****************************************!*\
+  !*** ./node_modules/is-mobile/index.js ***!
+  \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+module.exports = isMobile;
+module.exports.isMobile = isMobile;
+
+var mobileRE = /(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows (ce|phone)|xda|xiino/i;
+
+var tabletRE = /(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows (ce|phone)|xda|xiino|android|ipad|playbook|silk/i;
+
+function isMobile (opts) {
+  if (!opts) opts = {}
+  var ua = opts.ua
+  if (!ua && typeof navigator !== 'undefined') ua = navigator.userAgent;
+  if (ua && ua.headers && typeof ua.headers['user-agent'] === 'string') {
+    ua = ua.headers['user-agent'];
+  }
+  if (typeof ua !== 'string') return false;
+
+  return opts.tablet
+    ? tabletRE.test(ua)
+    : mobileRE.test(ua);
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash.flatten/index.js":
+/*!**********************************************!*\
+  !*** ./node_modules/lodash.flatten/index.js ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function(global) {/**
+ * lodash (Custom Build) <https://lodash.com/>
+ * Build: `lodash modularize exports="npm" -o ./`
+ * Copyright jQuery Foundation and other contributors <https://jquery.org/>
+ * Released under MIT license <https://lodash.com/license>
+ * Based on Underscore.js 1.8.3 <http://underscorejs.org/LICENSE>
+ * Copyright Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
+ */
+
+/** Used as references for various `Number` constants. */
+var MAX_SAFE_INTEGER = 9007199254740991;
+
+/** `Object#toString` result references. */
+var argsTag = '[object Arguments]',
+    funcTag = '[object Function]',
+    genTag = '[object GeneratorFunction]';
+
+/** Detect free variable `global` from Node.js. */
+var freeGlobal = typeof global == 'object' && global && global.Object === Object && global;
+
+/** Detect free variable `self`. */
+var freeSelf = typeof self == 'object' && self && self.Object === Object && self;
+
+/** Used as a reference to the global object. */
+var root = freeGlobal || freeSelf || Function('return this')();
+
+/**
+ * Appends the elements of `values` to `array`.
+ *
+ * @private
+ * @param {Array} array The array to modify.
+ * @param {Array} values The values to append.
+ * @returns {Array} Returns `array`.
+ */
+function arrayPush(array, values) {
+  var index = -1,
+      length = values.length,
+      offset = array.length;
+
+  while (++index < length) {
+    array[offset + index] = values[index];
+  }
+  return array;
+}
+
+/** Used for built-in method references. */
+var objectProto = Object.prototype;
+
+/** Used to check objects for own properties. */
+var hasOwnProperty = objectProto.hasOwnProperty;
+
+/**
+ * Used to resolve the
+ * [`toStringTag`](http://ecma-international.org/ecma-262/7.0/#sec-object.prototype.tostring)
+ * of values.
+ */
+var objectToString = objectProto.toString;
+
+/** Built-in value references. */
+var Symbol = root.Symbol,
+    propertyIsEnumerable = objectProto.propertyIsEnumerable,
+    spreadableSymbol = Symbol ? Symbol.isConcatSpreadable : undefined;
+
+/**
+ * The base implementation of `_.flatten` with support for restricting flattening.
+ *
+ * @private
+ * @param {Array} array The array to flatten.
+ * @param {number} depth The maximum recursion depth.
+ * @param {boolean} [predicate=isFlattenable] The function invoked per iteration.
+ * @param {boolean} [isStrict] Restrict to values that pass `predicate` checks.
+ * @param {Array} [result=[]] The initial result value.
+ * @returns {Array} Returns the new flattened array.
+ */
+function baseFlatten(array, depth, predicate, isStrict, result) {
+  var index = -1,
+      length = array.length;
+
+  predicate || (predicate = isFlattenable);
+  result || (result = []);
+
+  while (++index < length) {
+    var value = array[index];
+    if (depth > 0 && predicate(value)) {
+      if (depth > 1) {
+        // Recursively flatten arrays (susceptible to call stack limits).
+        baseFlatten(value, depth - 1, predicate, isStrict, result);
+      } else {
+        arrayPush(result, value);
+      }
+    } else if (!isStrict) {
+      result[result.length] = value;
+    }
+  }
+  return result;
+}
+
+/**
+ * Checks if `value` is a flattenable `arguments` object or array.
+ *
+ * @private
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is flattenable, else `false`.
+ */
+function isFlattenable(value) {
+  return isArray(value) || isArguments(value) ||
+    !!(spreadableSymbol && value && value[spreadableSymbol]);
+}
+
+/**
+ * Flattens `array` a single level deep.
+ *
+ * @static
+ * @memberOf _
+ * @since 0.1.0
+ * @category Array
+ * @param {Array} array The array to flatten.
+ * @returns {Array} Returns the new flattened array.
+ * @example
+ *
+ * _.flatten([1, [2, [3, [4]], 5]]);
+ * // => [1, 2, [3, [4]], 5]
+ */
+function flatten(array) {
+  var length = array ? array.length : 0;
+  return length ? baseFlatten(array, 1) : [];
+}
+
+/**
+ * Checks if `value` is likely an `arguments` object.
+ *
+ * @static
+ * @memberOf _
+ * @since 0.1.0
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is an `arguments` object,
+ *  else `false`.
+ * @example
+ *
+ * _.isArguments(function() { return arguments; }());
+ * // => true
+ *
+ * _.isArguments([1, 2, 3]);
+ * // => false
+ */
+function isArguments(value) {
+  // Safari 8.1 makes `arguments.callee` enumerable in strict mode.
+  return isArrayLikeObject(value) && hasOwnProperty.call(value, 'callee') &&
+    (!propertyIsEnumerable.call(value, 'callee') || objectToString.call(value) == argsTag);
+}
+
+/**
+ * Checks if `value` is classified as an `Array` object.
+ *
+ * @static
+ * @memberOf _
+ * @since 0.1.0
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is an array, else `false`.
+ * @example
+ *
+ * _.isArray([1, 2, 3]);
+ * // => true
+ *
+ * _.isArray(document.body.children);
+ * // => false
+ *
+ * _.isArray('abc');
+ * // => false
+ *
+ * _.isArray(_.noop);
+ * // => false
+ */
+var isArray = Array.isArray;
+
+/**
+ * Checks if `value` is array-like. A value is considered array-like if it's
+ * not a function and has a `value.length` that's an integer greater than or
+ * equal to `0` and less than or equal to `Number.MAX_SAFE_INTEGER`.
+ *
+ * @static
+ * @memberOf _
+ * @since 4.0.0
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is array-like, else `false`.
+ * @example
+ *
+ * _.isArrayLike([1, 2, 3]);
+ * // => true
+ *
+ * _.isArrayLike(document.body.children);
+ * // => true
+ *
+ * _.isArrayLike('abc');
+ * // => true
+ *
+ * _.isArrayLike(_.noop);
+ * // => false
+ */
+function isArrayLike(value) {
+  return value != null && isLength(value.length) && !isFunction(value);
+}
+
+/**
+ * This method is like `_.isArrayLike` except that it also checks if `value`
+ * is an object.
+ *
+ * @static
+ * @memberOf _
+ * @since 4.0.0
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is an array-like object,
+ *  else `false`.
+ * @example
+ *
+ * _.isArrayLikeObject([1, 2, 3]);
+ * // => true
+ *
+ * _.isArrayLikeObject(document.body.children);
+ * // => true
+ *
+ * _.isArrayLikeObject('abc');
+ * // => false
+ *
+ * _.isArrayLikeObject(_.noop);
+ * // => false
+ */
+function isArrayLikeObject(value) {
+  return isObjectLike(value) && isArrayLike(value);
+}
+
+/**
+ * Checks if `value` is classified as a `Function` object.
+ *
+ * @static
+ * @memberOf _
+ * @since 0.1.0
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is a function, else `false`.
+ * @example
+ *
+ * _.isFunction(_);
+ * // => true
+ *
+ * _.isFunction(/abc/);
+ * // => false
+ */
+function isFunction(value) {
+  // The use of `Object#toString` avoids issues with the `typeof` operator
+  // in Safari 8-9 which returns 'object' for typed array and other constructors.
+  var tag = isObject(value) ? objectToString.call(value) : '';
+  return tag == funcTag || tag == genTag;
+}
+
+/**
+ * Checks if `value` is a valid array-like length.
+ *
+ * **Note:** This method is loosely based on
+ * [`ToLength`](http://ecma-international.org/ecma-262/7.0/#sec-tolength).
+ *
+ * @static
+ * @memberOf _
+ * @since 4.0.0
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is a valid length, else `false`.
+ * @example
+ *
+ * _.isLength(3);
+ * // => true
+ *
+ * _.isLength(Number.MIN_VALUE);
+ * // => false
+ *
+ * _.isLength(Infinity);
+ * // => false
+ *
+ * _.isLength('3');
+ * // => false
+ */
+function isLength(value) {
+  return typeof value == 'number' &&
+    value > -1 && value % 1 == 0 && value <= MAX_SAFE_INTEGER;
+}
+
+/**
+ * Checks if `value` is the
+ * [language type](http://www.ecma-international.org/ecma-262/7.0/#sec-ecmascript-language-types)
+ * of `Object`. (e.g. arrays, functions, objects, regexes, `new Number(0)`, and `new String('')`)
+ *
+ * @static
+ * @memberOf _
+ * @since 0.1.0
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is an object, else `false`.
+ * @example
+ *
+ * _.isObject({});
+ * // => true
+ *
+ * _.isObject([1, 2, 3]);
+ * // => true
+ *
+ * _.isObject(_.noop);
+ * // => true
+ *
+ * _.isObject(null);
+ * // => false
+ */
+function isObject(value) {
+  var type = typeof value;
+  return !!value && (type == 'object' || type == 'function');
+}
+
+/**
+ * Checks if `value` is object-like. A value is object-like if it's not `null`
+ * and has a `typeof` result of "object".
+ *
+ * @static
+ * @memberOf _
+ * @since 4.0.0
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is object-like, else `false`.
+ * @example
+ *
+ * _.isObjectLike({});
+ * // => true
+ *
+ * _.isObjectLike([1, 2, 3]);
+ * // => true
+ *
+ * _.isObjectLike(_.noop);
+ * // => false
+ *
+ * _.isObjectLike(null);
+ * // => false
+ */
+function isObjectLike(value) {
+  return !!value && typeof value == 'object';
+}
+
+module.exports = flatten;
+
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../webpack/buildin/global.js */ "./node_modules/webpack/buildin/global.js")))
+
+/***/ }),
+
+/***/ "./node_modules/lodash.isstring/index.js":
+/*!***********************************************!*\
+  !*** ./node_modules/lodash.isstring/index.js ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/**
+ * lodash 4.0.1 (Custom Build) <https://lodash.com/>
+ * Build: `lodash modularize exports="npm" -o ./`
+ * Copyright 2012-2016 The Dojo Foundation <http://dojofoundation.org/>
+ * Based on Underscore.js 1.8.3 <http://underscorejs.org/LICENSE>
+ * Copyright 2009-2016 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
+ * Available under MIT license <https://lodash.com/license>
+ */
+
+/** `Object#toString` result references. */
+var stringTag = '[object String]';
+
+/** Used for built-in method references. */
+var objectProto = Object.prototype;
+
+/**
+ * Used to resolve the [`toStringTag`](http://ecma-international.org/ecma-262/6.0/#sec-object.prototype.tostring)
+ * of values.
+ */
+var objectToString = objectProto.toString;
+
+/**
+ * Checks if `value` is classified as an `Array` object.
+ *
+ * @static
+ * @memberOf _
+ * @type Function
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is correctly classified, else `false`.
+ * @example
+ *
+ * _.isArray([1, 2, 3]);
+ * // => true
+ *
+ * _.isArray(document.body.children);
+ * // => false
+ *
+ * _.isArray('abc');
+ * // => false
+ *
+ * _.isArray(_.noop);
+ * // => false
+ */
+var isArray = Array.isArray;
+
+/**
+ * Checks if `value` is object-like. A value is object-like if it's not `null`
+ * and has a `typeof` result of "object".
+ *
+ * @static
+ * @memberOf _
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is object-like, else `false`.
+ * @example
+ *
+ * _.isObjectLike({});
+ * // => true
+ *
+ * _.isObjectLike([1, 2, 3]);
+ * // => true
+ *
+ * _.isObjectLike(_.noop);
+ * // => false
+ *
+ * _.isObjectLike(null);
+ * // => false
+ */
+function isObjectLike(value) {
+  return !!value && typeof value == 'object';
+}
+
+/**
+ * Checks if `value` is classified as a `String` primitive or object.
+ *
+ * @static
+ * @memberOf _
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is correctly classified, else `false`.
+ * @example
+ *
+ * _.isString('abc');
+ * // => true
+ *
+ * _.isString(1);
+ * // => false
+ */
+function isString(value) {
+  return typeof value == 'string' ||
+    (!isArray(value) && isObjectLike(value) && objectToString.call(value) == stringTag);
+}
+
+module.exports = isString;
 
 
 /***/ }),
@@ -4119,6 +4780,1651 @@ var poseFactory = function (_a) {
 
 /***/ }),
 
+/***/ "./node_modules/react-emoji-render/data/aliases.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/react-emoji-render/data/aliases.js ***!
+  \*********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = {
+  "skin-tone-2": "🏻",
+  "skin-tone-3": "🏿",
+  "skin-tone-4": "🏽",
+  "skin-tone-5": "🏾",
+  "skin-tone-6": "🏿",
+  "100": "💯",
+  "1234": "🔢",
+  money_mouth_face: "🤑",
+  skull_and_crossbones: "☠️",
+  smile: "😄",
+  smiley: "😃",
+  grinning: "😀",
+  slightly_smiling_face: "🙂",
+  blush: "😊",
+  relaxed: "☺️",
+  wink: "😉",
+  heart_eyes: "😍",
+  kissing_heart: "😘",
+  kissing_closed_eyes: "😚",
+  kissing: "😗",
+  kissing_smiling_eyes: "😙",
+  stuck_out_tongue_winking_eye: "😜",
+  stuck_out_tongue_closed_eyes: "😝",
+  stuck_out_tongue: "😛",
+  flushed: "😳",
+  grin: "😁",
+  pensive: "😔",
+  relieved: "😌",
+  unamused: "😒",
+  disappointed: "😞",
+  persevere: "😣",
+  cry: "😢",
+  joy: "😂",
+  sob: "😭",
+  sleepy: "😪",
+  disappointed_relieved: "😥",
+  cold_sweat: "😰",
+  sweat_smile: "😅",
+  sweat: "😓",
+  weary: "😩",
+  tired_face: "😫",
+  fearful: "😨",
+  scream: "😱",
+  angry: "😠",
+  rage: "😡",
+  pout: "😡",
+  triumph: "😤",
+  confounded: "😖",
+  laughing: "😆",
+  satisfied: "😆",
+  yum: "😋",
+  mask: "😷",
+  sunglasses: "😎",
+  sleeping: "😴",
+  dizzy_face: "😵",
+  astonished: "😲",
+  worried: "😟",
+  frowning: "😦",
+  anguished: "😧",
+  smiling_imp: "😈",
+  imp: "👿",
+  open_mouth: "😮",
+  grimacing: "😬",
+  neutral_face: "😐",
+  confused: "😕",
+  hushed: "😯",
+  no_mouth: "😶",
+  innocent: "😇",
+  smirk: "😏",
+  expressionless: "😑",
+  man_with_gua_pi_mao: "👲",
+  man_with_turban: "👳",
+  cop: "👮",
+  construction_worker: "👷",
+  guardsman: "💂",
+  baby: "👶",
+  boy: "👦",
+  girl: "👧",
+  man: "👨",
+  woman: "👩",
+  older_man: "👴",
+  older_woman: "👵",
+  person_with_blond_hair: "👱",
+  angel: "👼",
+  princess: "👸",
+  smiley_cat: "😺",
+  smile_cat: "😸",
+  heart_eyes_cat: "😻",
+  kissing_cat: "😽",
+  smirk_cat: "😼",
+  scream_cat: "🙀",
+  crying_cat_face: "😿",
+  joy_cat: "😹",
+  pouting_cat: "😾",
+  japanese_ogre: "👹",
+  japanese_goblin: "👺",
+  see_no_evil: "🙈",
+  hear_no_evil: "🙉",
+  speak_no_evil: "🙊",
+  skull: "💀",
+  alien: "👽",
+  hankey: "💩",
+  poop: "💩",
+  shit: "💩",
+  fire: "🔥",
+  sparkles: "✨",
+  star2: "🌟",
+  dizzy: "💫",
+  boom: "💥",
+  collision: "💥",
+  anger: "💢",
+  sweat_drops: "💦",
+  droplet: "💧",
+  zzz: "💤",
+  dash: "💨",
+  ear: "👂",
+  eyes: "👀",
+  nose: "👃",
+  tongue: "👅",
+  lips: "👄",
+  "+1": "👍",
+  thumbsup: "👍",
+  "-1": "👎",
+  thumbsdown: "👎",
+  ok_hand: "👌",
+  facepunch: "👊",
+  punch: "👊",
+  fist: "✊",
+  v: "✌️",
+  wave: "👋",
+  hand: "✋",
+  raised_hand: "✋",
+  open_hands: "👐",
+  point_up_2: "👆",
+  point_down: "👇",
+  point_right: "👉",
+  point_left: "👈",
+  raised_hands: "🙌",
+  pray: "🙏",
+  point_up: "☝️",
+  clap: "👏",
+  muscle: "💪",
+  walking: "🚶",
+  runner: "🏃",
+  running: "🏃",
+  dancer: "💃",
+  couple: "👫",
+  family: "👪",
+  two_men_holding_hands: "👬",
+  two_women_holding_hands: "👭",
+  couplekiss: "💏",
+  couple_with_heart: "💑",
+  dancers: "👯",
+  ok_woman: "🙆",
+  no_good: "🙅",
+  ng_woman: "🙅",
+  information_desk_person: "💁",
+  raising_hand: "🙋",
+  massage: "💆",
+  haircut: "💇",
+  nail_care: "💅",
+  bride_with_veil: "👰",
+  person_with_pouting_face: "🙎",
+  person_frowning: "🙍",
+  bow: "🙇",
+  tophat: "🎩",
+  crown: "👑",
+  womans_hat: "👒",
+  athletic_shoe: "👟",
+  mans_shoe: "👞",
+  shoe: "👞",
+  sandal: "👡",
+  high_heel: "👠",
+  boot: "👢",
+  shirt: "👕",
+  tshirt: "👕",
+  necktie: "👔",
+  womans_clothes: "👚",
+  dress: "👗",
+  running_shirt_with_sash: "🎽",
+  jeans: "👖",
+  kimono: "👘",
+  bikini: "👙",
+  briefcase: "💼",
+  handbag: "👜",
+  pouch: "👝",
+  purse: "👛",
+  eyeglasses: "👓",
+  ribbon: "🎀",
+  closed_umbrella: "🌂",
+  lipstick: "💄",
+  yellow_heart: "💛",
+  blue_heart: "💙",
+  purple_heart: "💜",
+  green_heart: "💚",
+  heart: "❤️",
+  broken_heart: "💔",
+  heartpulse: "💗",
+  heartbeat: "💓",
+  two_hearts: "💕",
+  sparkling_heart: "💖",
+  revolving_hearts: "💞",
+  cupid: "💘",
+  love_letter: "💌",
+  kiss: "💋",
+  ring: "💍",
+  gem: "💎",
+  bust_in_silhouette: "👤",
+  busts_in_silhouette: "👥",
+  speech_balloon: "💬",
+  footprints: "👣",
+  thought_balloon: "💭",
+  dog: "🐶",
+  wolf: "🐺",
+  cat: "🐱",
+  mouse: "🐭",
+  hamster: "🐹",
+  rabbit: "🐰",
+  frog: "🐸",
+  tiger: "🐯",
+  koala: "🐨",
+  bear: "🐻",
+  pig: "🐷",
+  pig_nose: "🐽",
+  cow: "🐮",
+  boar: "🐗",
+  monkey_face: "🐵",
+  monkey: "🐒",
+  horse: "🐴",
+  sheep: "🐑",
+  elephant: "🐘",
+  panda_face: "🐼",
+  penguin: "🐧",
+  bird: "🐦",
+  baby_chick: "🐤",
+  hatched_chick: "🐥",
+  hatching_chick: "🐣",
+  chicken: "🐔",
+  snake: "🐍",
+  turtle: "🐢",
+  bug: "🐛",
+  bee: "🐝",
+  honeybee: "🐝",
+  ant: "🐜",
+  beetle: "🐞",
+  snail: "🐌",
+  octopus: "🐙",
+  shell: "🐚",
+  tropical_fish: "🐠",
+  fish: "🐟",
+  dolphin: "🐬",
+  flipper: "🐬",
+  whale: "🐳",
+  whale2: "🐋",
+  cow2: "🐄",
+  ram: "🐏",
+  rat: "🐀",
+  water_buffalo: "🐃",
+  tiger2: "🐅",
+  rabbit2: "🐇",
+  dragon: "🐉",
+  racehorse: "🐎",
+  goat: "🐐",
+  rooster: "🐓",
+  dog2: "🐕",
+  pig2: "🐖",
+  mouse2: "🐁",
+  ox: "🐂",
+  dragon_face: "🐲",
+  blowfish: "🐡",
+  crocodile: "🐊",
+  camel: "🐫",
+  dromedary_camel: "🐪",
+  leopard: "🐆",
+  cat2: "🐈",
+  poodle: "🐩",
+  feet: "🐾",
+  paw_prints: "🐾",
+  bouquet: "💐",
+  cherry_blossom: "🌸",
+  tulip: "🌷",
+  four_leaf_clover: "🍀",
+  rose: "🌹",
+  sunflower: "🌻",
+  hibiscus: "🌺",
+  maple_leaf: "🍁",
+  leaves: "🍃",
+  fallen_leaf: "🍂",
+  herb: "🌿",
+  ear_of_rice: "🌾",
+  mushroom: "🍄",
+  cactus: "🌵",
+  palm_tree: "🌴",
+  evergreen_tree: "🌲",
+  deciduous_tree: "🌳",
+  chestnut: "🌰",
+  seedling: "🌱",
+  blossom: "🌼",
+  globe_with_meridians: "🌐",
+  sun_with_face: "🌞",
+  full_moon_with_face: "🌝",
+  new_moon_with_face: "🌚",
+  new_moon: "🌑",
+  waxing_crescent_moon: "🌒",
+  first_quarter_moon: "🌓",
+  moon: "🌔",
+  waxing_gibbous_moon: "🌔",
+  full_moon: "🌕",
+  waning_gibbous_moon: "🌖",
+  last_quarter_moon: "🌗",
+  waning_crescent_moon: "🌘",
+  last_quarter_moon_with_face: "🌜",
+  first_quarter_moon_with_face: "🌛",
+  crescent_moon: "🌙",
+  earth_africa: "🌍",
+  earth_americas: "🌎",
+  earth_asia: "🌏",
+  volcano: "🌋",
+  milky_way: "🌌",
+  stars: "🌠",
+  star: "⭐",
+  sunny: "☀️",
+  partly_sunny: "⛅",
+  cloud: "☁️",
+  zap: "⚡",
+  umbrella: "☔",
+  snowflake: "❄️",
+  snowman: "⛄",
+  cyclone: "🌀",
+  foggy: "🌁",
+  rainbow: "🌈",
+  ocean: "🌊",
+  bamboo: "🎍",
+  gift_heart: "💝",
+  dolls: "🎎",
+  school_satchel: "🎒",
+  mortar_board: "🎓",
+  flags: "🎏",
+  fireworks: "🎆",
+  sparkler: "🎇",
+  wind_chime: "🎐",
+  rice_scene: "🎑",
+  jack_o_lantern: "🎃",
+  ghost: "👻",
+  santa: "🎅",
+  christmas_tree: "🎄",
+  gift: "🎁",
+  tanabata_tree: "🎋",
+  tada: "🎉",
+  confetti_ball: "🎊",
+  balloon: "🎈",
+  crossed_flags: "🎌",
+  crystal_ball: "🔮",
+  movie_camera: "🎥",
+  camera: "📷",
+  video_camera: "📹",
+  vhs: "📼",
+  cd: "💿",
+  dvd: "📀",
+  minidisc: "💽",
+  floppy_disk: "💾",
+  desktop_computer: "🖥️",
+  computer: "💻",
+  iphone: "📱",
+  phone: "☎️",
+  telephone: "☎️",
+  telephone_receiver: "📞",
+  pager: "📟",
+  fax: "📠",
+  satellite: "📡",
+  tv: "📺",
+  radio: "📻",
+  loud_sound: "🔊",
+  sound: "🔉",
+  speaker: "🔈",
+  mute: "🔇",
+  bell: "🔔",
+  no_bell: "🔕",
+  loudspeaker: "📢",
+  mega: "📣",
+  hourglass_flowing_sand: "⏳",
+  hourglass: "⌛",
+  alarm_clock: "⏰",
+  watch: "⌚",
+  unlock: "🔓",
+  lock: "🔒",
+  lock_with_ink_pen: "🔏",
+  closed_lock_with_key: "🔐",
+  key: "🔑",
+  mag_right: "🔎",
+  bulb: "💡",
+  flashlight: "🔦",
+  high_brightness: "🔆",
+  low_brightness: "🔅",
+  electric_plug: "🔌",
+  battery: "🔋",
+  mag: "🔍",
+  bathtub: "🛁",
+  bath: "🛀",
+  shower: "🚿",
+  toilet: "🚽",
+  wrench: "🔧",
+  nut_and_bolt: "🔩",
+  hammer: "🔨",
+  hammer_and_pick: "⚒",
+  hammer_and_wrench: "⚒",
+  door: "🚪",
+  smoking: "🚬",
+  bomb: "💣",
+  gun: "🔫",
+  hocho: "🔪",
+  knife: "🔪",
+  pill: "💊",
+  syringe: "💉",
+  moneybag: "💰",
+  yen: "💴",
+  dollar: "💵",
+  pound: "💷",
+  euro: "💶",
+  credit_card: "💳",
+  money_with_wings: "💸",
+  calling: "📲",
+  "e-mail": "📧",
+  inbox_tray: "📥",
+  outbox_tray: "📤",
+  email: "✉️",
+  envelope: "✉️",
+  envelope_with_arrow: "📩",
+  incoming_envelope: "📨",
+  postal_horn: "📯",
+  mailbox: "📫",
+  mailbox_closed: "📪",
+  mailbox_with_mail: "📬",
+  mailbox_with_no_mail: "📭",
+  postbox: "📮",
+  package: "📦",
+  memo: "📝",
+  pencil: "📝",
+  page_facing_up: "📄",
+  page_with_curl: "📃",
+  bookmark_tabs: "📑",
+  bar_chart: "📊",
+  chart_with_upwards_trend: "📈",
+  chart_with_downwards_trend: "📉",
+  scroll: "📜",
+  clipboard: "📋",
+  date: "📅",
+  calendar: "📆",
+  card_index: "📇",
+  file_folder: "📁",
+  open_file_folder: "📂",
+  scissors: "✂️",
+  pushpin: "📌",
+  paperclip: "📎",
+  black_nib: "✒️",
+  pencil2: "✏️",
+  straight_ruler: "📏",
+  triangular_ruler: "📐",
+  closed_book: "📕",
+  green_book: "📗",
+  blue_book: "📘",
+  orange_book: "📙",
+  notebook: "📓",
+  notebook_with_decorative_cover: "📔",
+  ledger: "📒",
+  books: "📚",
+  book: "📖",
+  open_book: "📖",
+  bookmark: "🔖",
+  name_badge: "📛",
+  microscope: "🔬",
+  telescope: "🔭",
+  newspaper: "📰",
+  art: "🎨",
+  clapper: "🎬",
+  microphone: "🎤",
+  headphones: "🎧",
+  musical_score: "🎼",
+  musical_note: "🎵",
+  notes: "🎶",
+  musical_keyboard: "🎹",
+  violin: "🎻",
+  trumpet: "🎺",
+  saxophone: "🎷",
+  guitar: "🎸",
+  space_invader: "👾",
+  video_game: "🎮",
+  black_joker: "🃏",
+  flower_playing_cards: "🎴",
+  mahjong: "🀄",
+  game_die: "🎲",
+  dart: "🎯",
+  football: "🏈",
+  basketball: "🏀",
+  soccer: "⚽",
+  baseball: "⚾️",
+  tennis: "🎾",
+  "8ball": "🎱",
+  rugby_football: "🏉",
+  bowling: "🎳",
+  golf: "⛳",
+  mountain_bicyclist: "🚵",
+  bicyclist: "🚴",
+  checkered_flag: "🏁",
+  horse_racing: "🏇",
+  trophy: "🏆",
+  ski: "🎿",
+  snowboarder: "🏂",
+  swimmer: "🏊",
+  surfer: "🏄",
+  fishing_pole_and_fish: "🎣",
+  coffee: "☕",
+  tea: "🍵",
+  sake: "🍶",
+  baby_bottle: "🍼",
+  beer: "🍺",
+  beers: "🍻",
+  cocktail: "🍸",
+  tropical_drink: "🍹",
+  wine_glass: "🍷",
+  fork_and_knife: "🍴",
+  pizza: "🍕",
+  hamburger: "🍔",
+  fries: "🍟",
+  poultry_leg: "🍗",
+  meat_on_bone: "🍖",
+  spaghetti: "🍝",
+  curry: "🍛",
+  fried_shrimp: "🍤",
+  bento: "🍱",
+  sushi: "🍣",
+  fish_cake: "🍥",
+  rice_ball: "🍙",
+  rice_cracker: "🍘",
+  rice: "🍚",
+  ramen: "🍜",
+  stew: "🍲",
+  oden: "🍢",
+  dango: "🍡",
+  egg: "🍳",
+  bread: "🍞",
+  doughnut: "🍩",
+  custard: "🍮",
+  icecream: "🍦",
+  ice_cream: "🍨",
+  shaved_ice: "🍧",
+  birthday: "🎂",
+  cake: "🍰",
+  cookie: "🍪",
+  chocolate_bar: "🍫",
+  candy: "🍬",
+  lollipop: "🍭",
+  honey_pot: "🍯",
+  apple: "🍎",
+  green_apple: "🍏",
+  tangerine: "🍊",
+  orange: "🍊",
+  mandarin: "🍊",
+  lemon: "🍋",
+  cherries: "🍒",
+  grapes: "🍇",
+  watermelon: "🍉",
+  strawberry: "🍓",
+  peach: "🍑",
+  melon: "🍈",
+  banana: "🍌",
+  pear: "🍐",
+  pineapple: "🍍",
+  sweet_potato: "🍠",
+  eggplant: "🍆",
+  tomato: "🍅",
+  corn: "🌽",
+  house: "🏠",
+  house_with_garden: "🏡",
+  school: "🏫",
+  office: "🏢",
+  post_office: "🏣",
+  hospital: "🏥",
+  bank: "🏦",
+  convenience_store: "🏪",
+  love_hotel: "🏩",
+  hotel: "🏨",
+  wedding: "💒",
+  church: "⛪",
+  department_store: "🏬",
+  european_post_office: "🏤",
+  city_sunrise: "🌇",
+  city_sunset: "🌆",
+  japanese_castle: "🏯",
+  european_castle: "🏰",
+  tent: "⛺",
+  factory: "🏭",
+  tokyo_tower: "🗼",
+  japan: "🗾",
+  mount_fuji: "🗻",
+  sunrise_over_mountains: "🌄",
+  sunrise: "🌅",
+  night_with_stars: "🌃",
+  statue_of_liberty: "🗽",
+  bridge_at_night: "🌉",
+  carousel_horse: "🎠",
+  ferris_wheel: "🎡",
+  fountain: "⛲",
+  roller_coaster: "🎢",
+  ship: "🚢",
+  boat: "⛵",
+  sailboat: "⛵",
+  speedboat: "🚤",
+  rowboat: "🚣",
+  anchor: "⚓",
+  rocket: "🚀",
+  airplane: "✈️",
+  seat: "💺",
+  helicopter: "🚁",
+  steam_locomotive: "🚂",
+  tram: "🚊",
+  station: "🚉",
+  mountain_railway: "🚞",
+  train2: "🚆",
+  bullettrain_side: "🚄",
+  bullettrain_front: "🚅",
+  light_rail: "🚈",
+  metro: "🚇",
+  monorail: "🚝",
+  train: "🚋",
+  railway_car: "🚃",
+  trolleybus: "🚎",
+  bus: "🚌",
+  oncoming_bus: "🚍",
+  blue_car: "🚙",
+  oncoming_automobile: "🚘",
+  car: "🚗",
+  red_car: "🚗",
+  taxi: "🚕",
+  oncoming_taxi: "🚖",
+  articulated_lorry: "🚛",
+  truck: "🚚",
+  rotating_light: "🚨",
+  police_car: "🚓",
+  oncoming_police_car: "🚔",
+  fire_engine: "🚒",
+  ambulance: "🚑",
+  minibus: "🚐",
+  bike: "🚲",
+  aerial_tramway: "🚡",
+  suspension_railway: "🚟",
+  mountain_cableway: "🚠",
+  tractor: "🚜",
+  barber: "💈",
+  busstop: "🚏",
+  ticket: "🎫",
+  vertical_traffic_light: "🚦",
+  traffic_light: "🚥",
+  warning: "⚠️",
+  construction: "🚧",
+  beginner: "🔰",
+  fuelpump: "⛽",
+  izakaya_lantern: "🏮",
+  lantern: "🏮",
+  slot_machine: "🎰",
+  hotsprings: "♨️",
+  moyai: "🗿",
+  circus_tent: "🎪",
+  performing_arts: "🎭",
+  round_pushpin: "📍",
+  triangular_flag_on_post: "🚩",
+  jp: "🇯🇵",
+  kr: "🇰🇷",
+  de: "🇩🇪",
+  cn: "🇨🇳",
+  us: "🇺🇸",
+  fr: "🇫🇷",
+  es: "🇪🇸",
+  it: "🇮🇹",
+  ru: "🇷🇺",
+  gb: "🇬🇧",
+  uk: "🇬🇧",
+  one: "1️⃣",
+  two: "2️⃣",
+  three: "3️⃣",
+  four: "4️⃣",
+  five: "5️⃣",
+  six: "6️⃣",
+  seven: "7️⃣",
+  eight: "8️⃣",
+  nine: "9️⃣",
+  zero: "0️⃣",
+  keycap_ten: "🔟",
+  hash: "#️⃣",
+  symbols: "🔣",
+  arrow_up: "⬆️",
+  arrow_down: "⬇️",
+  arrow_left: "⬅️",
+  arrow_right: "➡️",
+  capital_abcd: "🔠",
+  abcd: "🔡",
+  abc: "🔤",
+  arrow_upper_right: "↗️",
+  arrow_upper_left: "↖️",
+  arrow_lower_right: "↘️",
+  arrow_lower_left: "↙️",
+  left_right_arrow: "↔️",
+  arrow_up_down: "↕️",
+  arrows_counterclockwise: "🔄",
+  arrow_backward: "◀️",
+  arrow_forward: "▶️",
+  arrow_up_small: "🔼",
+  arrow_down_small: "🔽",
+  leftwards_arrow_with_hook: "↩️",
+  arrow_right_hook: "↪️",
+  information_source: "ℹ️",
+  rewind: "⏪",
+  fast_forward: "⏩",
+  arrow_double_up: "⏫",
+  arrow_double_down: "⏬",
+  arrow_heading_down: "⤵️",
+  arrow_heading_up: "⤴️",
+  ok: "🆗",
+  twisted_rightwards_arrows: "🔀",
+  repeat: "🔁",
+  repeat_one: "🔂",
+  new: "🆕",
+  up: "🆙",
+  cool: "🆒",
+  free: "🆓",
+  ng: "🆖",
+  signal_strength: "📶",
+  cinema: "🎦",
+  koko: "🈁",
+  u6307: "🈯",
+  u7a7a: "🈳",
+  u6e80: "🈵",
+  u5408: "🈴",
+  u7981: "🈲",
+  ideograph_advantage: "🉐",
+  u5272: "🈹",
+  u55b6: "🈺",
+  u6709: "🈶",
+  u7121: "🈚",
+  restroom: "🚻",
+  mens: "🚹",
+  womens: "🚺",
+  baby_symbol: "🚼",
+  wc: "🚾",
+  potable_water: "🚰",
+  put_litter_in_its_place: "🚮",
+  parking: "🅿️",
+  wheelchair: "♿",
+  no_smoking: "🚭",
+  u6708: "🈷️",
+  u7533: "🈸",
+  sa: "🈂️",
+  m: "Ⓜ️",
+  passport_control: "🛂",
+  baggage_claim: "🛄",
+  left_luggage: "🛅",
+  customs: "🛃",
+  accept: "🉑",
+  secret: "㊙️",
+  congratulations: "㊗️",
+  cl: "🆑",
+  sos: "🆘",
+  id: "🆔",
+  no_entry_sign: "🚫",
+  underage: "🔞",
+  no_mobile_phones: "📵",
+  do_not_litter: "🚯",
+  "non-potable_water": "🚱",
+  no_bicycles: "🚳",
+  no_pedestrians: "🚷",
+  children_crossing: "🚸",
+  no_entry: "⛔",
+  eight_spoked_asterisk: "✳️",
+  sparkle: "❇️",
+  negative_squared_cross_mark: "❎",
+  white_check_mark: "✅",
+  eight_pointed_black_star: "✴️",
+  heart_decoration: "💟",
+  vs: "🆚",
+  vibration_mode: "📳",
+  mobile_phone_off: "📴",
+  a: "🅰️",
+  b: "🅱️",
+  ab: "🆎",
+  o2: "🅾️",
+  diamond_shape_with_a_dot_inside: "💠",
+  loop: "➿",
+  recycle: "♻️",
+  aries: "♈",
+  taurus: "♉",
+  gemini: "♊",
+  cancer: "♋",
+  leo: "♌",
+  virgo: "♍",
+  libra: "♎",
+  scorpius: "♏",
+  sagittarius: "♐",
+  capricorn: "♑",
+  aquarius: "♒",
+  pisces: "♓",
+  ophiuchus: "⛎",
+  six_pointed_star: "🔯",
+  atm: "🏧",
+  chart: "💹",
+  heavy_dollar_sign: "💲",
+  currency_exchange: "💱",
+  copyright: "©️",
+  registered: "®️",
+  tm: "™️",
+  x: "❌",
+  bangbang: "‼️",
+  interrobang: "⁉️",
+  exclamation: "❗",
+  heavy_exclamation_mark: "❗",
+  question: "❓",
+  grey_exclamation: "❕",
+  grey_question: "❔",
+  o: "⭕",
+  top: "🔝",
+  end: "🔚",
+  back: "🔙",
+  on: "🔛",
+  soon: "🔜",
+  arrows_clockwise: "🔃",
+  clock12: "🕛",
+  clock1230: "🕧",
+  clock1: "🕐",
+  clock130: "🕜",
+  clock2: "🕑",
+  clock230: "🕝",
+  clock3: "🕒",
+  clock330: "🕞",
+  clock4: "🕓",
+  clock430: "🕟",
+  clock5: "🕔",
+  clock530: "🕠",
+  clock6: "🕕",
+  clock7: "🕖",
+  clock8: "🕗",
+  clock9: "🕘",
+  clock10: "🕙",
+  clock11: "🕚",
+  clock630: "🕡",
+  clock730: "🕢",
+  clock830: "🕣",
+  clock930: "🕤",
+  clock1030: "🕥",
+  clock1130: "🕦",
+  heavy_multiplication_x: "✖️",
+  heavy_plus_sign: "➕",
+  heavy_minus_sign: "➖",
+  heavy_division_sign: "➗",
+  spades: "♠️",
+  hearts: "♥️",
+  clubs: "♣️",
+  diamonds: "♦️",
+  white_flower: "💮",
+  heavy_check_mark: "✔️",
+  ballot_box_with_check: "☑️",
+  radio_button: "🔘",
+  link: "🔗",
+  curly_loop: "➰",
+  wavy_dash: "〰️",
+  part_alternation_mark: "〽️",
+  trident: "🔱",
+  black_medium_square: "◼️",
+  white_medium_square: "◻️",
+  black_medium_small_square: "◾",
+  white_medium_small_square: "◽",
+  black_small_square: "▪️",
+  white_small_square: "▫️",
+  small_red_triangle: "🔺",
+  black_square_button: "🔲",
+  white_square_button: "🔳",
+  black_circle: "⚫",
+  white_circle: "⚪",
+  red_circle: "🔴",
+  large_blue_circle: "🔵",
+  small_red_triangle_down: "🔻",
+  white_large_square: "⬜",
+  black_large_square: "⬛",
+  large_orange_diamond: "🔶",
+  large_blue_diamond: "🔷",
+  small_orange_diamond: "🔸",
+  small_blue_diamond: "🔹",
+  flag_ac: "🇦🇨",
+  flag_ad: "🇦🇩",
+  flag_ae: "🇦🇪",
+  flag_af: "🇦🇫",
+  flag_ag: "🇦🇬",
+  flag_ai: "🇦🇮",
+  flag_al: "🇦🇱",
+  flag_am: "🇦🇲",
+  flag_ao: "🇦🇴",
+  flag_aq: "🇦🇶",
+  flag_ar: "🇦🇷",
+  flag_as: "🇦🇸",
+  flag_at: "🇦🇹",
+  flag_au: "🇦🇺",
+  flag_aw: "🇦🇼",
+  flag_ax: "🇦🇽",
+  flag_az: "🇦🇿",
+  flag_ba: "🇧🇦",
+  flag_bb: "🇧🇧",
+  flag_bd: "🇧🇩",
+  flag_be: "🇧🇪",
+  flag_bf: "🇧🇫",
+  flag_bg: "🇧🇬",
+  flag_bh: "🇧🇭",
+  flag_bi: "🇧🇮",
+  flag_bj: "🇧🇯",
+  flag_bl: "🇧🇱",
+  flag_bm: "🇧🇲",
+  flag_bn: "🇧🇳",
+  flag_bo: "🇧🇴",
+  flag_bq: "🇧🇶",
+  flag_br: "🇧🇷",
+  flag_bs: "🇧🇸",
+  flag_bt: "🇧🇹",
+  flag_bv: "🇧🇻",
+  flag_bw: "🇧🇼",
+  flag_by: "🇧🇾",
+  flag_bz: "🇧🇿",
+  flag_ca: "🇨🇦",
+  flag_cc: "🇨🇨",
+  flag_cd: "🇨🇩",
+  flag_cf: "🇨🇫",
+  flag_cg: "🇨🇬",
+  flag_ch: "🇨🇭",
+  flag_ci: "🇨🇮",
+  flag_ck: "🇨🇰",
+  flag_cl: "🇨🇱",
+  flag_cm: "🇨🇲",
+  flag_cn: "🇨🇳",
+  flag_co: "🇨🇴",
+  flag_cp: "🇨🇵",
+  flag_cr: "🇨🇷",
+  flag_cu: "🇨🇺",
+  flag_cv: "🇨🇻",
+  flag_cw: "🇨🇼",
+  flag_cx: "🇨🇽",
+  flag_cy: "🇨🇾",
+  flag_cz: "🇨🇿",
+  flag_de: "🇩🇪",
+  flag_dg: "🇩🇬",
+  flag_dj: "🇩🇯",
+  flag_dk: "🇩🇰",
+  flag_dm: "🇩🇲",
+  flag_do: "🇩🇴",
+  flag_dz: "🇩🇿",
+  flag_ea: "🇪🇦",
+  flag_ec: "🇪🇨",
+  flag_ee: "🇪🇪",
+  flag_eg: "🇪🇬",
+  flag_eh: "🇪🇭",
+  flag_er: "🇪🇷",
+  flag_es: "🇪🇸",
+  flag_et: "🇪🇹",
+  flag_eu: "🇪🇺",
+  flag_fi: "🇫🇮",
+  flag_fj: "🇫🇯",
+  flag_fk: "🇫🇰",
+  flag_fm: "🇫🇲",
+  flag_fo: "🇫🇴",
+  flag_fr: "🇫🇷",
+  flag_ga: "🇬🇦",
+  flag_gb: "🇬🇧",
+  flag_gd: "🇬🇩",
+  flag_ge: "🇬🇪",
+  flag_gf: "🇬🇫",
+  flag_gg: "🇬🇬",
+  flag_gh: "🇬🇭",
+  flag_gi: "🇬🇮",
+  flag_gl: "🇬🇱",
+  flag_gm: "🇬🇲",
+  flag_gn: "🇬🇳",
+  flag_gp: "🇬🇵",
+  flag_gq: "🇬🇶",
+  flag_gr: "🇬🇷",
+  flag_gs: "🇬🇸",
+  flag_gt: "🇬🇹",
+  flag_gu: "🇬🇺",
+  flag_gw: "🇬🇼",
+  flag_gy: "🇬🇾",
+  flag_hk: "🇭🇰",
+  flag_hm: "🇭🇲",
+  flag_hn: "🇭🇳",
+  flag_hr: "🇭🇷",
+  flag_ht: "🇭🇹",
+  flag_hu: "🇭🇺",
+  flag_ic: "🇮🇨",
+  flag_id: "🇮🇩",
+  flag_ie: "🇮🇪",
+  flag_il: "🇮🇱",
+  flag_im: "🇮🇲",
+  flag_in: "🇮🇳",
+  flag_io: "🇮🇴",
+  flag_iq: "🇮🇶",
+  flag_ir: "🇮🇷",
+  flag_is: "🇮🇸",
+  flag_it: "🇮🇹",
+  flag_je: "🇯🇪",
+  flag_jm: "🇯🇲",
+  flag_jo: "🇯🇴",
+  flag_jp: "🇯🇵",
+  flag_ke: "🇰🇪",
+  flag_kg: "🇰🇬",
+  flag_kh: "🇰🇭",
+  flag_ki: "🇰🇮",
+  flag_km: "🇰🇲",
+  flag_kn: "🇰🇳",
+  flag_kp: "🇰🇵",
+  flag_kr: "🇰🇷",
+  flag_kw: "🇰🇼",
+  flag_ky: "🇰🇾",
+  flag_kz: "🇰🇿",
+  flag_la: "🇱🇦",
+  flag_lb: "🇱🇧",
+  flag_lc: "🇱🇨",
+  flag_li: "🇱🇮",
+  flag_lk: "🇱🇰",
+  flag_lr: "🇱🇷",
+  flag_ls: "🇱🇸",
+  flag_lt: "🇱🇹",
+  flag_lu: "🇱🇺",
+  flag_lv: "🇱🇻",
+  flag_ly: "🇱🇾",
+  flag_ma: "🇲🇦",
+  flag_mc: "🇲🇨",
+  flag_md: "🇲🇩",
+  flag_me: "🇲🇪",
+  flag_mf: "🇲🇫",
+  flag_mg: "🇲🇬",
+  flag_mh: "🇲🇭",
+  flag_mk: "🇲🇰",
+  flag_ml: "🇲🇱",
+  flag_mm: "🇲🇲",
+  flag_mn: "🇲🇳",
+  flag_mo: "🇲🇴",
+  flag_mp: "🇲🇵",
+  flag_mq: "🇲🇶",
+  flag_mr: "🇲🇷",
+  flag_ms: "🇲🇸",
+  flag_mt: "🇲🇹",
+  flag_mu: "🇲🇺",
+  flag_mv: "🇲🇻",
+  flag_mw: "🇲🇼",
+  flag_mx: "🇲🇽",
+  flag_my: "🇲🇾",
+  flag_mz: "🇲🇿",
+  flag_na: "🇳🇦",
+  flag_nc: "🇳🇨",
+  flag_ne: "🇳🇪",
+  flag_nf: "🇳🇫",
+  flag_ng: "🇳🇬",
+  flag_ni: "🇳🇮",
+  flag_nl: "🇳🇱",
+  flag_no: "🇳🇴",
+  flag_np: "🇳🇵",
+  flag_nr: "🇳🇷",
+  flag_nu: "🇳🇺",
+  flag_nz: "🇳🇿",
+  flag_om: "🇴🇲",
+  flag_pa: "🇵🇦",
+  flag_pe: "🇵🇪",
+  flag_pf: "🇵🇫",
+  flag_pg: "🇵🇬",
+  flag_ph: "🇵🇭",
+  flag_pk: "🇵🇰",
+  flag_pl: "🇵🇱",
+  flag_pm: "🇵🇲",
+  flag_pn: "🇵🇳",
+  flag_pr: "🇵🇷",
+  flag_ps: "🇵🇸",
+  flag_pt: "🇵🇹",
+  flag_pw: "🇵🇼",
+  flag_py: "🇵🇾",
+  flag_qa: "🇶🇦",
+  flag_re: "🇷🇪",
+  flag_ro: "🇷🇴",
+  flag_rs: "🇷🇸",
+  flag_ru: "🇷🇺",
+  flag_rw: "🇷🇼",
+  flag_sa: "🇸🇦",
+  flag_sb: "🇸🇧",
+  flag_sc: "🇸🇨",
+  flag_sd: "🇸🇩",
+  flag_se: "🇸🇪",
+  flag_sg: "🇸🇬",
+  flag_sh: "🇸🇭",
+  flag_si: "🇸🇮",
+  flag_sj: "🇸🇯",
+  flag_sk: "🇸🇰",
+  flag_sl: "🇸🇱",
+  flag_sm: "🇸🇲",
+  flag_sn: "🇸🇳",
+  flag_so: "🇸🇴",
+  flag_sr: "🇸🇷",
+  flag_ss: "🇸🇸",
+  flag_st: "🇸🇹",
+  flag_sv: "🇸🇻",
+  flag_sx: "🇸🇽",
+  flag_sy: "🇸🇾",
+  flag_sz: "🇸🇿",
+  flag_ta: "🇹🇦",
+  flag_tc: "🇹🇨",
+  flag_td: "🇹🇩",
+  flag_tf: "🇹🇫",
+  flag_tg: "🇹🇬",
+  flag_th: "🇹🇭",
+  flag_tj: "🇹🇯",
+  flag_tk: "🇹🇰",
+  flag_tl: "🇹🇱",
+  flag_tm: "🇹🇲",
+  flag_tn: "🇹🇳",
+  flag_to: "🇹🇴",
+  flag_tr: "🇹🇷",
+  flag_tt: "🇹🇹",
+  flag_tv: "🇹🇻",
+  flag_tw: "🇹🇼",
+  flag_tz: "🇹🇿",
+  flag_ua: "🇺🇦",
+  flag_ug: "🇺🇬",
+  flag_um: "🇺🇲",
+  flag_un: "🇺🇳",
+  flag_us: "🇺🇸",
+  flag_uy: "🇺🇾",
+  flag_uz: "🇺🇿",
+  flag_va: "🇻🇦",
+  flag_vc: "🇻🇨",
+  flag_ve: "🇻🇪",
+  flag_vg: "🇻🇬",
+  flag_vi: "🇻🇮",
+  flag_vn: "🇻🇳",
+  flag_vu: "🇻🇺",
+  flag_wf: "🇼🇫",
+  flag_ws: "🇼🇸",
+  flag_xk: "🇽🇰",
+  flag_ye: "🇾🇪",
+  flag_yt: "🇾🇹",
+  flag_za: "🇿🇦",
+  flag_zm: "🇿🇲",
+  flag_zw: "🇿🇼"
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/react-emoji-render/data/asciiAliases.js":
+/*!**************************************************************!*\
+  !*** ./node_modules/react-emoji-render/data/asciiAliases.js ***!
+  \**************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = {
+  angry: [">:(", ">:-("],
+  blush: [':")', ':-")'],
+  broken_heart: ["</3", "<\\3"],
+  confused: [":/", ":-/"],
+  cry: [":'(", ":'-(", ":,(", ":,-("],
+  frowning: [":(", ":-("],
+  heart: ["<3"],
+  imp: ["]:(", "]:-("],
+  innocent: ["o:)", "O:)", "o:-)", "O:-)", "0:)", "0:-)"],
+  joy: [":')", ":'-)", ":,)", ":,-)", ":'D", ":'-D", ":,D", ":,-D"],
+  kissing: [":*", ":-*"],
+  laughing: ["x-)", "X-)"],
+  neutral_face: [":|", ":-|"],
+  open_mouth: [":o", ":-o", ":O", ":-O"],
+  rage: [":@", ":-@"],
+  smile: [":D", ":-D"],
+  smiley: [":)", ":-)"],
+  smiling_imp: ["]:)", "]:-)"],
+  sob: [":,'(", ":,'-(", ";(", ";-("],
+  stuck_out_tongue: [":P", ":-P", ":p", ":-p"],
+  sunglasses: ["8-)", "B-)"],
+  sweat: [",:(", ",:-("],
+  sweat_smile: [",:)", ",:-)"],
+  unamused: [":s", ":-S", ":z", ":-Z", ":$", ":-$"],
+  wink: [";)", ";-)"]
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/react-emoji-render/lib/asciiRegex.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/react-emoji-render/lib/asciiRegex.js ***!
+  \***********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+exports.default = function () {
+  return new RegExp("(" + edgeCases + ")?(" + names + ")((?!(" + edgeCases + "))[a-z0-9_\\-\\+]+:)?", "g");
+};
+
+var _asciiAliases = __webpack_require__(/*! ../data/asciiAliases */ "./node_modules/react-emoji-render/data/asciiAliases.js");
+
+var _asciiAliases2 = _interopRequireDefault(_asciiAliases);
+
+var _lodash = __webpack_require__(/*! lodash.flatten */ "./node_modules/lodash.flatten/index.js");
+
+var _lodash2 = _interopRequireDefault(_lodash);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function quoteRE(str) {
+  return str.replace(/[.?*+^$[\]\\(){}|-]/g, "\\$&");
+}
+
+var names = (0, _lodash2.default)(Object.keys(_asciiAliases2.default).map(function (name) {
+  return _asciiAliases2.default[name].map(function (alias) {
+    return quoteRE(alias);
+  });
+})).join("|");
+
+var edgeCases = ["http", "https"].join("|");
+
+// Regex reads as following:
+//
+// Match ascii aliases with optional edge cases before it (to know if parsing is needed)
+// Additionally, after the ascii alias:
+//    - Forbid edge cases
+//    - Allow characters included in normal aliases (to check later cases like :s and :smile:)
+
+/***/ }),
+
+/***/ "./node_modules/react-emoji-render/lib/index.js":
+/*!******************************************************!*\
+  !*** ./node_modules/react-emoji-render/lib/index.js ***!
+  \******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.toArray = undefined;
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _renderer = __webpack_require__(/*! ./renderer */ "./node_modules/react-emoji-render/lib/renderer.js");
+
+Object.defineProperty(exports, "toArray", {
+  enumerable: true,
+  get: function get() {
+    return _renderer.toArray;
+  }
+});
+exports.Twemoji = Twemoji;
+exports.Emojione = Emojione;
+exports.EmojioneV4 = EmojioneV4;
+
+var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+var _renderer2 = _interopRequireDefault(_renderer);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+
+var protocol = "https";
+
+if (typeof location !== "undefined" && location.protocol === "http:") {
+  protocol = "http";
+}
+
+exports.default = _renderer2.default;
+function Twemoji(_ref) {
+  var svg = _ref.svg,
+      options = _ref.options,
+      rest = _objectWithoutProperties(_ref, ["svg", "options"]);
+
+  var size = svg ? "" : "72x72";
+  var ext = svg ? "svg" : "png";
+
+  options = _extends({
+    protocol: protocol,
+    baseUrl: "//twemoji.maxcdn.com/2/" + (svg ? "svg/" : ""),
+    size: size,
+    ext: ext
+  }, options);
+
+  return _react2.default.createElement(_renderer2.default, _extends({ options: options }, rest));
+}
+
+Twemoji.propTypes = {
+  text: _propTypes2.default.string,
+  options: _propTypes2.default.object,
+  svg: _propTypes2.default.bool
+};
+
+function Emojione(_ref2) {
+  var svg = _ref2.svg,
+      options = _ref2.options,
+      rest = _objectWithoutProperties(_ref2, ["svg", "options"]);
+
+  var ext = svg ? "svg" : "png";
+
+  options = _extends({
+    protocol: protocol,
+    baseUrl: "//cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/" + ext + "/",
+    size: "",
+    ext: ext,
+    emojione: true
+  }, options);
+
+  return _react2.default.createElement(_renderer2.default, _extends({ options: options }, rest));
+}
+
+Emojione.propTypes = {
+  text: _propTypes2.default.string,
+  options: _propTypes2.default.object,
+  svg: _propTypes2.default.bool
+};
+
+function EmojioneV4(_ref3) {
+  var size = _ref3.size,
+      options = _ref3.options,
+      rest = _objectWithoutProperties(_ref3, ["size", "options"]);
+
+  var ext = "png";
+
+  options = _extends({
+    protocol: protocol,
+    baseUrl: "//cdn.jsdelivr.net/emojione/assets/4.0/" + ext + "/",
+    size: size,
+    ext: ext,
+    emojione: true
+  }, options);
+
+  return _react2.default.createElement(_renderer2.default, _extends({ options: options }, rest));
+}
+
+EmojioneV4.propTypes = {
+  text: _propTypes2.default.string,
+  options: _propTypes2.default.object,
+  size: _propTypes2.default.oneOf([32, 64, 128])
+};
+EmojioneV4.defaultProps = {
+  size: 64
+};
+
+/***/ }),
+
+/***/ "./node_modules/react-emoji-render/lib/normalizeProtocol.js":
+/*!******************************************************************!*\
+  !*** ./node_modules/react-emoji-render/lib/normalizeProtocol.js ***!
+  \******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = normalizeProtocol;
+// ensure protocol has trailing : if missing
+function normalizeProtocol(protocol) {
+  if (protocol && !protocol.endsWith(":")) return protocol + ":";
+  return protocol;
+}
+
+/***/ }),
+
+/***/ "./node_modules/react-emoji-render/lib/renderer.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/react-emoji-render/lib/renderer.js ***!
+  \*********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+exports.toArray = toArray;
+exports.default = Emoji;
+
+var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+var _classnames2 = __webpack_require__(/*! classnames */ "./node_modules/classnames/index.js");
+
+var _classnames3 = _interopRequireDefault(_classnames2);
+
+var _stringReplaceToArray = __webpack_require__(/*! string-replace-to-array */ "./node_modules/string-replace-to-array/string-replace-to-array.js");
+
+var _stringReplaceToArray2 = _interopRequireDefault(_stringReplaceToArray);
+
+var _emojiRegex = __webpack_require__(/*! emoji-regex */ "./node_modules/emoji-regex/index.js");
+
+var _emojiRegex2 = _interopRequireDefault(_emojiRegex);
+
+var _asciiRegex = __webpack_require__(/*! ./asciiRegex */ "./node_modules/react-emoji-render/lib/asciiRegex.js");
+
+var _asciiRegex2 = _interopRequireDefault(_asciiRegex);
+
+var _normalizeProtocol = __webpack_require__(/*! ./normalizeProtocol */ "./node_modules/react-emoji-render/lib/normalizeProtocol.js");
+
+var _normalizeProtocol2 = _interopRequireDefault(_normalizeProtocol);
+
+var _unicodeToCodepoint = __webpack_require__(/*! ./unicodeToCodepoint */ "./node_modules/react-emoji-render/lib/unicodeToCodepoint.js");
+
+var _unicodeToCodepoint2 = _interopRequireDefault(_unicodeToCodepoint);
+
+var _aliases = __webpack_require__(/*! ../data/aliases */ "./node_modules/react-emoji-render/data/aliases.js");
+
+var _aliases2 = _interopRequireDefault(_aliases);
+
+var _asciiAliases = __webpack_require__(/*! ../data/asciiAliases */ "./node_modules/react-emoji-render/data/asciiAliases.js");
+
+var _asciiAliases2 = _interopRequireDefault(_asciiAliases);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+
+var asciiAliasesRegex = (0, _asciiRegex2.default)();
+var unicodeEmojiRegex = (0, _emojiRegex2.default)();
+var aliasesRegex = /:([\w\-\_\+]+):/g;
+
+// using em's we can ensure size matches surrounding font
+var style = {
+  width: "1em",
+  height: "1em",
+  margin: "0 .05em 0 .1em",
+  verticalAlign: "-0.1em"
+};
+
+function toArray(text) {
+  var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+
+  var protocol = (0, _normalizeProtocol2.default)(options.protocol);
+
+  function replaceUnicodeEmoji(match, i) {
+    if (!options.baseUrl) {
+      return _react2.default.createElement(
+        "span",
+        { key: i, style: style, className: options.className },
+        match
+      );
+    }
+
+    var codepoint = (0, _unicodeToCodepoint2.default)(match, removeHelperCharacters);
+
+    // if Emojione we don't want to add helper characters in the URL
+    var removeHelperCharacters = options.emojione;
+    if (removeHelperCharacters) {
+      codepoint = codepoint.replace(/-200d/g, "").replace(/-fe0f/g, "");
+    }
+
+    var separator = options.size ? "/" : "";
+    var src = "" + protocol + options.baseUrl + options.size + separator + codepoint + "." + options.ext;
+
+    return _react2.default.createElement("img", _extends({
+      key: i,
+      alt: match,
+      src: src,
+      style: style,
+      className: options.className
+    }, options.props));
+  }
+
+  function replaceAsciiAliases() {
+    var asciiAliasKeys = Object.keys(_asciiAliases2.default);
+
+    for (var _len = arguments.length, match = Array(_len), _key = 0; _key < _len; _key++) {
+      match[_key] = arguments[_key];
+    }
+
+    for (var i in asciiAliasKeys) {
+      var alias = asciiAliasKeys[i];
+      var data = _asciiAliases2.default[alias];
+      var aliasFound = match[2];
+
+      if (data.includes(aliasFound)) {
+        var isEdgeCase = match[1];
+        var fullMatchContent = match[0].slice(1, -1); // remove ":" at the beginning and end
+        var validAsciiAlias = !_aliases2.default[fullMatchContent]; // ":" + fullMatchContent + ":" alias doesn't exist
+
+        if (!isEdgeCase && validAsciiAlias) {
+          return ":" + alias + ":";
+        }
+
+        // return the original word to replace its value in aliasesRegex
+        return match[0];
+      }
+    }
+  }
+
+  function replaceAliases() {
+    for (var _len2 = arguments.length, match = Array(_len2), _key2 = 0; _key2 < _len2; _key2++) {
+      match[_key2] = arguments[_key2];
+    }
+
+    return _aliases2.default[match[1]] || match[0];
+  }
+
+  return (0, _stringReplaceToArray2.default)(text.replace(asciiAliasesRegex, replaceAsciiAliases).replace(aliasesRegex, replaceAliases), unicodeEmojiRegex, replaceUnicodeEmoji);
+}
+
+function Emoji(_ref) {
+  var text = _ref.text,
+      onlyEmojiClassName = _ref.onlyEmojiClassName,
+      _ref$options = _ref.options,
+      options = _ref$options === undefined ? {} : _ref$options,
+      className = _ref.className,
+      rest = _objectWithoutProperties(_ref, ["text", "onlyEmojiClassName", "options", "className"]);
+
+  function isOnlyEmoji(output) {
+    if (output.length > 3) return false;
+
+    for (var i = 0; i < output.length; i++) {
+      if (typeof output[i] === "string") return false;
+    }
+
+    return true;
+  }
+
+  var output = toArray(text, options);
+  var classes = (0, _classnames3.default)(className, _defineProperty({}, onlyEmojiClassName, isOnlyEmoji(output)));
+
+  return _react2.default.createElement(
+    "span",
+    _extends({}, rest, { className: classes }),
+    output
+  );
+}
+
+Emoji.propTypes = {
+  text: _propTypes2.default.string,
+  props: _propTypes2.default.object,
+  onlyEmojiClassName: _propTypes2.default.string,
+  options: _propTypes2.default.shape({
+    baseUrl: _propTypes2.default.string,
+    size: _propTypes2.default.oneOfType([_propTypes2.default.number, _propTypes2.default.string]),
+    ext: _propTypes2.default.string,
+    className: _propTypes2.default.string
+  })
+};
+
+/***/ }),
+
+/***/ "./node_modules/react-emoji-render/lib/unicodeToCodepoint.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/react-emoji-render/lib/unicodeToCodepoint.js ***!
+  \*******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = unicodeToCodepoint;
+// avoid runtime RegExp creation for not so smart,
+// not JIT based, and old browsers / engines
+// https://github.com/twitter/twemoji/blob/gh-pages/2/twemoji.js#L232
+var UFE0Fg = /\uFE0F/g;
+
+// \u200D is a zero-width joiner character
+// https://github.com/twitter/twemoji/blob/gh-pages/2/twemoji.js#L235
+var U200D = String.fromCharCode(0x200d);
+
+// convert utf16 into code points
+function toCodePoint(input) {
+  var separator = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : "-";
+
+  var codePoints = [];
+  var _iteratorNormalCompletion = true;
+  var _didIteratorError = false;
+  var _iteratorError = undefined;
+
+  try {
+    for (var _iterator = input[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+      var codePoint = _step.value;
+
+      codePoints.push(codePoint.codePointAt(0).toString(16));
+    }
+  } catch (err) {
+    _didIteratorError = true;
+    _iteratorError = err;
+  } finally {
+    try {
+      if (!_iteratorNormalCompletion && _iterator.return) {
+        _iterator.return();
+      }
+    } finally {
+      if (_didIteratorError) {
+        throw _iteratorError;
+      }
+    }
+  }
+
+  return codePoints.join(separator);
+}
+
+function unicodeToCodepoint(input) {
+  return toCodePoint(input.indexOf(U200D) < 0 ? input.replace(UFE0Fg, "") : input);
+}
+
+/***/ }),
+
 /***/ "./node_modules/react-pose/dist/react-pose.es.js":
 /*!*******************************************************!*\
   !*** ./node_modules/react-pose/dist/react-pose.es.js ***!
@@ -4624,6 +6930,119 @@ var PoseGroup = (function (_super) {
 /* harmony default export */ __webpack_exports__["default"] = (posed);
 
 
+
+/***/ }),
+
+/***/ "./node_modules/string-replace-to-array/string-replace-to-array.js":
+/*!*************************************************************************!*\
+  !*** ./node_modules/string-replace-to-array/string-replace-to-array.js ***!
+  \*************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Inspiration: https://github.com/facebook/react/issues/3386
+
+var invariant = __webpack_require__(/*! invariant */ "./node_modules/invariant/browser.js"),
+	isString = __webpack_require__(/*! lodash.isstring */ "./node_modules/lodash.isstring/index.js"),
+	flatten = __webpack_require__(/*! lodash.flatten */ "./node_modules/lodash.flatten/index.js")
+
+function replace (string, regexpOrSubstr, newValueOrFn) {
+	invariant(typeof string === 'string', 'First param must be a string')
+	invariant(typeof regexpOrSubstr === 'string' || regexpOrSubstr instanceof RegExp, 'Second param must be a string pattern or a regular expression')
+
+	var fn = (typeof regexpOrSubstr === 'string') ? replaceUsingString : replaceUsingRegexp
+
+	return fn(string, regexpOrSubstr, newValueOrFn)
+}
+
+function replaceUsingString (string, patternString, newValueOrFn) {
+	var index = string.indexOf(patternString)
+
+	if (index >= 0) {
+		var arr = []
+		var endIndex = index + patternString.length
+
+		if (index > 0) {
+			arr.push(string.substring(0, index))
+		}
+
+		arr.push(
+			(typeof newValueOrFn === 'function') ?
+				newValueOrFn(
+					string.substring(index, endIndex),
+					index,
+					string
+				) :
+				newValueOrFn
+		)
+
+		if (endIndex < string.length) {
+			arr.push(string.substring(endIndex))
+		}
+
+		return arr
+	} else {
+		return [string]
+	}
+}
+
+function replaceUsingRegexp (string, regexp, newValueOrFn) {
+	var output = []
+
+	var replacerIsFn = (typeof newValueOrFn === 'function')
+
+	var storedLastIndex = regexp.lastIndex
+	regexp.lastIndex = 0
+
+	var result
+	var lastIndex = 0
+	while (result = regexp.exec(string)) {
+		var index = result.index
+
+		if (result[0] === '') {
+			// When the regexp is an empty string
+			// we still want to advance our cursor to the next item.
+			// This is the behavior of String.replace.
+			regexp.lastIndex++
+		}
+
+		if (index !== lastIndex) {
+			output.push(string.substring(lastIndex, index))
+		}
+
+		var match = result[0]
+		lastIndex = index + match.length
+		
+		var out = replacerIsFn ?
+			newValueOrFn.apply(this, result.concat(index, result.input)) :
+			newValueOrFn
+		output.push(out)
+
+		if (!regexp.global) {
+			break
+		}
+	}
+
+	if (lastIndex < string.length) {
+		output.push(string.substring(lastIndex))
+	}
+
+	regexp.lastIndex = storedLastIndex
+	return output
+}
+
+module.exports = function stringReplaceToArray (string, regexpOrSubstr, newSubStrOrFn) {
+	if (isString(string)) {
+		return replace(string, regexpOrSubstr, newSubStrOrFn)
+	} else if (!Array.isArray(string) || !string[0]) {
+		throw new TypeError('First argument must be an array or non-empty string');
+	} else {
+		return flatten(string.map(function (string) {
+			if (!isString(string)) return string
+			return replace(string, regexpOrSubstr, newSubStrOrFn)
+		}))
+	}
+}
 
 /***/ }),
 
@@ -5849,6 +8268,17 @@ function __importDefault(mod) {
 
 })));
 
+
+/***/ }),
+
+/***/ "./node_modules/webpack/buildin/global.js":
+/*!******************************************************************************************************!*\
+  !*** delegated ./node_modules/webpack/buildin/global.js from dll-reference dll_7aff549c98b978433226 ***!
+  \******************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = (__webpack_require__(/*! dll-reference dll_7aff549c98b978433226 */ "dll-reference dll_7aff549c98b978433226"))("./node_modules/webpack/buildin/global.js");
 
 /***/ })
 
