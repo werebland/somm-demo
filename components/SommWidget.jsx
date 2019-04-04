@@ -99,13 +99,11 @@ const StyledWidgetToggleIcon = styled(WidgetToggleIcon)`
   display: flex;
   align-items: center;
   justify-content: center;
-  scale: 1;
   opacity: 1;
 
   & svg {
     fill: ${props => props.iconColor};
-    width: 32px;
-    height: 32px;
+    transform: ${props => props.role === "close" ? 'scale(1.1)' : 'scale(1.2)'};
   }
 `;
 
@@ -270,7 +268,7 @@ class Widget extends Component {
           <WidgetToggle key="-1" background={this.props.backgroundColor} onClick={() => this.setState({ open: !this.state.open, hasOpened: true })}>
               {this.state.open
                 ?
-                  <StyledWidgetToggleIcon iconColor={this.props.iconColor}>
+                  <StyledWidgetToggleIcon iconColor={this.props.iconColor} role="close">
                     <svg fill={this.props.iconColor} width="18px" height="18px" viewBox="0 0 16 16" version="1.1">
                         <g id="Page-4" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
                             <g id="Search" transform="translate(-46.000000, -45.000000)" fill={this.props.iconColor} fillRule="nonzero">
@@ -284,7 +282,7 @@ class Widget extends Component {
                     </svg>
                   </StyledWidgetToggleIcon>
                 :
-                  <StyledWidgetToggleIcon iconColor={this.props.iconColor}>
+                  <StyledWidgetToggleIcon iconColor={this.props.iconColor} role="open">
                     {this.props.icon === "rounded" &&
                       <svg width="24" height="24" viewBox="0 0 24 24">
                         <path fill="none" d="M0 0h24v24H0V0z"/>

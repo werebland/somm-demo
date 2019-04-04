@@ -123,8 +123,10 @@ var WidgetToggleIcon = react_pose__WEBPACK_IMPORTED_MODULE_8___default.a.div({
 var StyledWidgetToggleIcon = styled_components__WEBPACK_IMPORTED_MODULE_9___default()(WidgetToggleIcon).withConfig({
   displayName: "SommWidget__StyledWidgetToggleIcon",
   componentId: "i7qmkt-3"
-})(["width:24px;height:24px;display:flex;align-items:center;justify-content:center;scale:1;opacity:1;& svg{fill:", ";width:32px;height:32px;}"], function (props) {
+})(["width:24px;height:24px;display:flex;align-items:center;justify-content:center;opacity:1;& svg{fill:", ";transform:", ";}"], function (props) {
   return props.iconColor;
+}, function (props) {
+  return props.role === "close" ? 'scale(1.1)' : 'scale(1.2)';
 });
 var spinnerAnimation = Object(styled_components__WEBPACK_IMPORTED_MODULE_9__["keyframes"])(["0%{top:28px;left:28px;width:0;height:0;opacity:1;}100%{top:-1px;left:-1px;width:58px;height:58px;opacity:0;}"]);
 var SpinnerWrapper = styled_components__WEBPACK_IMPORTED_MODULE_9___default.a.div.withConfig({
@@ -156,7 +158,7 @@ var WidgetMessage = styled_components__WEBPACK_IMPORTED_MODULE_9___default()(fun
   return react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(PosedWidgetMessage, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_5__["default"])({}, props, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 185
+      lineNumber: 183
     },
     __self: this
   }));
@@ -203,7 +205,7 @@ function (_Component) {
         position: this.props.position,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 240
+          lineNumber: 238
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(react_pose__WEBPACK_IMPORTED_MODULE_8__["PoseGroup"], {
@@ -211,20 +213,20 @@ function (_Component) {
         preEnterPose: "init",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 241
+          lineNumber: 239
         },
         __self: this
       }, this.state.messageVisible && !this.state.hasOpened && react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(WidgetMessage, {
         key: "1",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 243
+          lineNumber: 241
         },
         __self: this
       }, this.props.message)), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(react_pose__WEBPACK_IMPORTED_MODULE_8__["PoseGroup"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 248
+          lineNumber: 246
         },
         __self: this
       }, this.state.open && react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(StyledWidgetFrame, {
@@ -233,13 +235,13 @@ function (_Component) {
         position: this.props.position,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 250
+          lineNumber: 248
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(SpinnerWrapper, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 251
+          lineNumber: 249
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("iframe", {
@@ -258,26 +260,26 @@ function (_Component) {
         frameBorder: "0",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 252
+          lineNumber: 250
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(Spinner, {
         color: this.props.iconColor,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 260
+          lineNumber: 258
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 261
+          lineNumber: 259
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 262
+          lineNumber: 260
         },
         __self: this
       }))))), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(react_pose__WEBPACK_IMPORTED_MODULE_8__["PoseGroup"], {
@@ -285,7 +287,7 @@ function (_Component) {
         preEnterPose: "init",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 269
+          lineNumber: 267
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(WidgetToggle, {
@@ -299,14 +301,15 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 270
+          lineNumber: 268
         },
         __self: this
       }, this.state.open ? react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(StyledWidgetToggleIcon, {
         iconColor: this.props.iconColor,
+        role: "close",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 273
+          lineNumber: 271
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("svg", {
@@ -317,7 +320,7 @@ function (_Component) {
         version: "1.1",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 274
+          lineNumber: 272
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("g", {
@@ -328,7 +331,7 @@ function (_Component) {
         fillRule: "evenodd",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 275
+          lineNumber: 273
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("g", {
@@ -338,7 +341,7 @@ function (_Component) {
         fillRule: "nonzero",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 276
+          lineNumber: 274
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("g", {
@@ -346,7 +349,7 @@ function (_Component) {
         transform: "translate(32.000000, 32.000000)",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 277
+          lineNumber: 275
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("g", {
@@ -354,7 +357,7 @@ function (_Component) {
         transform: "translate(14.000000, 11.000000)",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 278
+          lineNumber: 276
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("polygon", {
@@ -362,14 +365,15 @@ function (_Component) {
         points: "15.5555556 3.56666667 13.9888889 2 7.77777778 8.21111111 1.56666667 2 0 3.56666667 6.21111111 9.77777778 0 15.9888889 1.56666667 17.5555556 7.77777778 11.3444444 13.9888889 17.5555556 15.5555556 15.9888889 9.34444444 9.77777778",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 279
+          lineNumber: 277
         },
         __self: this
       }))))))) : react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(StyledWidgetToggleIcon, {
         iconColor: this.props.iconColor,
+        role: "open",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 287
+          lineNumber: 285
         },
         __self: this
       }, this.props.icon === "rounded" && react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("svg", {
@@ -378,7 +382,7 @@ function (_Component) {
         viewBox: "0 0 24 24",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 289
+          lineNumber: 287
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("path", {
@@ -386,14 +390,14 @@ function (_Component) {
         d: "M0 0h24v24H0V0z",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 290
+          lineNumber: 288
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("path", {
         d: "M8.1 13.34l2.83-2.83-6.19-6.18c-.48-.48-1.31-.35-1.61.27-.71 1.49-.45 3.32.78 4.56l4.19 4.18zm6.78-1.81c1.53.71 3.68.21 5.27-1.38 1.91-1.91 2.28-4.65.81-6.12-1.46-1.46-4.2-1.1-6.12.81-1.59 1.59-2.09 3.74-1.38 5.27L4.4 19.17c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0L12 14.41l6.18 6.18c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L13.41 13l1.47-1.47z",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 291
+          lineNumber: 289
         },
         __self: this
       })), this.props.icon === "sharp" && react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("svg", {
@@ -402,7 +406,7 @@ function (_Component) {
         viewBox: "0 0 24 24",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 295
+          lineNumber: 293
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("path", {
@@ -410,27 +414,27 @@ function (_Component) {
         d: "M0 0h24v24H0V0z",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 296
+          lineNumber: 294
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("path", {
         d: "M8.1 13.34l2.83-2.83L3.91 3.5c-1.56 1.56-1.56 4.09 0 5.66l4.19 4.18zm6.78-1.81c1.53.71 3.68.21 5.27-1.38 1.91-1.91 2.28-4.65.81-6.12-1.46-1.46-4.2-1.1-6.12.81-1.59 1.59-2.09 3.74-1.38 5.27L3.7 19.87l1.41 1.41L12 14.41l6.88 6.88 1.41-1.41L13.41 13l1.47-1.47z",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 297
+          lineNumber: 295
         },
         __self: this
       })), this.props.icon === "emoji" && react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(WidgetToggleIconEmoji, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 301
+          lineNumber: 299
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(react_emoji_render__WEBPACK_IMPORTED_MODULE_12___default.a, {
         text: "\uD83C\uDF7D",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 301
+          lineNumber: 299
         },
         __self: this
       }))))));
