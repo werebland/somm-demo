@@ -1,4 +1,4 @@
-((window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/xoh.js"],{
+((window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/unchainedkitchen.js"],{
 
 /***/ "./components/DemoBanner.jsx":
 /*!***********************************!*\
@@ -5929,21 +5929,21 @@ module.exports = ReactPropTypesSecret;
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fxoh&absolutePagePath=%2FUsers%2FChris%2Fsomm-demo%2Fpages%2Fxoh.js!./":
-/*!*************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fxoh&absolutePagePath=%2FUsers%2FChris%2Fsomm-demo%2Fpages%2Fxoh.js ***!
-  \*************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Funchainedkitchen&absolutePagePath=%2FUsers%2FChris%2Fsomm-demo%2Fpages%2Funchainedkitchen.js!./":
+/*!***************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Funchainedkitchen&absolutePagePath=%2FUsers%2FChris%2Fsomm-demo%2Fpages%2Funchainedkitchen.js ***!
+  \***************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    (window.__NEXT_P=window.__NEXT_P||[]).push(["/xoh", function() {
-      var page = __webpack_require__(/*! ./pages/xoh.js */ "./pages/xoh.js")
+    (window.__NEXT_P=window.__NEXT_P||[]).push(["/unchainedkitchen", function() {
+      var page = __webpack_require__(/*! ./pages/unchainedkitchen.js */ "./pages/unchainedkitchen.js")
       if(true) {
-        module.hot.accept(/*! ./pages/xoh.js */ "./pages/xoh.js", function() {
-          if(!next.router.components["/xoh"]) return
-          var updatedPage = __webpack_require__(/*! ./pages/xoh.js */ "./pages/xoh.js")
-          next.router.update("/xoh", updatedPage.default || updatedPage)
+        module.hot.accept(/*! ./pages/unchainedkitchen.js */ "./pages/unchainedkitchen.js", function() {
+          if(!next.router.components["/unchainedkitchen"]) return
+          var updatedPage = __webpack_require__(/*! ./pages/unchainedkitchen.js */ "./pages/unchainedkitchen.js")
+          next.router.update("/unchainedkitchen", updatedPage.default || updatedPage)
         })
       }
       return { page: page.default || page }
@@ -9712,10 +9712,10 @@ if ( true && typeof window !== 'undefined' && typeof navigator !== 'undefined' &
 
 /***/ }),
 
-/***/ "./pages/xoh.js":
-/*!**********************!*\
-  !*** ./pages/xoh.js ***!
-  \**********************/
+/***/ "./pages/unchainedkitchen.js":
+/*!***********************************!*\
+  !*** ./pages/unchainedkitchen.js ***!
+  \***********************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -9731,7 +9731,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_server_head__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(next_server_head__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _components_DemoBanner__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/DemoBanner */ "./components/DemoBanner.jsx");
 
-var _jsxFileName = "/Users/Chris/somm-demo/pages/xoh.js";
+var _jsxFileName = "/Users/Chris/somm-demo/pages/unchainedkitchen.js";
 
 function _templateObject() {
   var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  body {\n    margin: 0;\n    padding: 0;\n    font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\";\n  }\n"]);
@@ -9762,76 +9762,76 @@ var SommWidget = next_server_dynamic__WEBPACK_IMPORTED_MODULE_3___default()(func
   }
 });
 var DemoWrapper = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
-  displayName: "xoh__DemoWrapper",
-  componentId: "sc-107wagd-0"
+  displayName: "unchainedkitchen__DemoWrapper",
+  componentId: "sc-12oebo0-0"
 })(["width:100vw;height:100vh;overflow:hidden;position:relative;"]);
 var IFrameWrapper = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
-  displayName: "xoh__IFrameWrapper",
-  componentId: "sc-107wagd-1"
+  displayName: "unchainedkitchen__IFrameWrapper",
+  componentId: "sc-12oebo0-1"
 })(["width:100vw;height:100%;min-height:100vh;display:flex;position:relative;z-index:1;overflow:hidden;& iframe{width:100%;height:100%;min-height:100vh;}"]);
 /* harmony default export */ __webpack_exports__["default"] = (function () {
   return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(DemoWrapper, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46
+      lineNumber: 45
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(GlobalStyle, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47
+      lineNumber: 46
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_server_head__WEBPACK_IMPORTED_MODULE_4___default.a, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 48
+      lineNumber: 47
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("title", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 49
+      lineNumber: 48
     },
     __self: this
-  }, "The Exchange on Hollis | Somm Demo"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("meta", {
+  }, "Unchained Kitchen | Somm Demo"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("meta", {
     name: "viewport",
     content: "minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 50
+      lineNumber: 49
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_DemoBanner__WEBPACK_IMPORTED_MODULE_5__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 55
+      lineNumber: 54
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(IFrameWrapper, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 56
+      lineNumber: 55
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("iframe", {
-    src: "https://xoh.ca",
+    src: "https://unchainedkitchen.ca/",
     frameBorder: "0",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 57
+      lineNumber: 56
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(SommWidget, {
-    username: "xoh",
-    icon: "rounded",
-    iconColor: "#be713c",
-    backgroundColor: "#fff",
+    username: "unchainedkitchen",
+    icon: "sharp",
+    iconColor: "#fff",
+    backgroundColor: "#666",
     position: "right",
     message: "Check out our menu \uD83D\uDC47",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 59
+      lineNumber: 58
     },
     __self: this
   }));
@@ -9839,14 +9839,14 @@ var IFrameWrapper = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].di
 
 /***/ }),
 
-/***/ 1:
-/*!*****************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2Fxoh&absolutePagePath=%2FUsers%2FChris%2Fsomm-demo%2Fpages%2Fxoh.js ***!
-  \*****************************************************************************************************************/
+/***/ 3:
+/*!*******************************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2Funchainedkitchen&absolutePagePath=%2FUsers%2FChris%2Fsomm-demo%2Fpages%2Funchainedkitchen.js ***!
+  \*******************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fxoh&absolutePagePath=%2FUsers%2FChris%2Fsomm-demo%2Fpages%2Fxoh.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fxoh&absolutePagePath=%2FUsers%2FChris%2Fsomm-demo%2Fpages%2Fxoh.js!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Funchainedkitchen&absolutePagePath=%2FUsers%2FChris%2Fsomm-demo%2Fpages%2Funchainedkitchen.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Funchainedkitchen&absolutePagePath=%2FUsers%2FChris%2Fsomm-demo%2Fpages%2Funchainedkitchen.js!./");
 
 
 /***/ }),
@@ -9862,5 +9862,5 @@ module.exports = dll_7aff549c98b978433226;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js"]]]));;
-//# sourceMappingURL=xoh.js.map
+},[[3,"static/runtime/webpack.js"]]]));;
+//# sourceMappingURL=unchainedkitchen.js.map

@@ -6,7 +6,7 @@ module.exports =
 /******/ 	// object to store loaded chunks
 /******/ 	// "0" means "already loaded"
 /******/ 	var installedChunks = {
-/******/ 		"static/development/pages/xoh.js": 0
+/******/ 		"static/development/pages/unchainedkitchen.js": 0
 /******/ 	};
 /******/
 /******/ 	// The require function
@@ -121,7 +121,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 5);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -246,10 +246,10 @@ function _taggedTemplateLiteral(strings, raw) {
 
 /***/ }),
 
-/***/ "./pages/xoh.js":
-/*!**********************!*\
-  !*** ./pages/xoh.js ***!
-  \**********************/
+/***/ "./pages/unchainedkitchen.js":
+/*!***********************************!*\
+  !*** ./pages/unchainedkitchen.js ***!
+  \***********************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -266,7 +266,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_server_head__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(next_server_head__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _components_DemoBanner__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/DemoBanner */ "./components/DemoBanner.jsx");
 
-var _jsxFileName = "/Users/Chris/somm-demo/pages/xoh.js";
+var _jsxFileName = "/Users/Chris/somm-demo/pages/unchainedkitchen.js";
 
 function _templateObject() {
   var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  body {\n    margin: 0;\n    padding: 0;\n    font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\";\n  }\n"]);
@@ -297,76 +297,76 @@ var SommWidget = next_server_dynamic__WEBPACK_IMPORTED_MODULE_3___default()(func
   }
 });
 var DemoWrapper = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.div.withConfig({
-  displayName: "xoh__DemoWrapper",
-  componentId: "sc-107wagd-0"
+  displayName: "unchainedkitchen__DemoWrapper",
+  componentId: "sc-12oebo0-0"
 })(["width:100vw;height:100vh;overflow:hidden;position:relative;"]);
 var IFrameWrapper = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.div.withConfig({
-  displayName: "xoh__IFrameWrapper",
-  componentId: "sc-107wagd-1"
+  displayName: "unchainedkitchen__IFrameWrapper",
+  componentId: "sc-12oebo0-1"
 })(["width:100vw;height:100%;min-height:100vh;display:flex;position:relative;z-index:1;overflow:hidden;& iframe{width:100%;height:100%;min-height:100vh;}"]);
 /* harmony default export */ __webpack_exports__["default"] = (function () {
   return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(DemoWrapper, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46
+      lineNumber: 45
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(GlobalStyle, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47
+      lineNumber: 46
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_server_head__WEBPACK_IMPORTED_MODULE_4___default.a, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 48
+      lineNumber: 47
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("title", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 49
+      lineNumber: 48
     },
     __self: this
-  }, "The Exchange on Hollis | Somm Demo"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("meta", {
+  }, "Unchained Kitchen | Somm Demo"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("meta", {
     name: "viewport",
     content: "minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 50
+      lineNumber: 49
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_DemoBanner__WEBPACK_IMPORTED_MODULE_5__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 55
+      lineNumber: 54
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(IFrameWrapper, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 56
+      lineNumber: 55
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("iframe", {
-    src: "https://xoh.ca",
+    src: "https://unchainedkitchen.ca/",
     frameBorder: "0",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 57
+      lineNumber: 56
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(SommWidget, {
-    username: "xoh",
-    icon: "rounded",
-    iconColor: "#be713c",
-    backgroundColor: "#fff",
+    username: "unchainedkitchen",
+    icon: "sharp",
+    iconColor: "#fff",
+    backgroundColor: "#666",
     position: "right",
     message: "Check out our menu \uD83D\uDC47",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 59
+      lineNumber: 58
     },
     __self: this
   }));
@@ -374,14 +374,14 @@ var IFrameWrapper = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.div
 
 /***/ }),
 
-/***/ 3:
-/*!****************************!*\
-  !*** multi ./pages/xoh.js ***!
-  \****************************/
+/***/ 5:
+/*!*****************************************!*\
+  !*** multi ./pages/unchainedkitchen.js ***!
+  \*****************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/Chris/somm-demo/pages/xoh.js */"./pages/xoh.js");
+module.exports = __webpack_require__(/*! /Users/Chris/somm-demo/pages/unchainedkitchen.js */"./pages/unchainedkitchen.js");
 
 
 /***/ }),
@@ -585,4 +585,4 @@ module.exports = require("vh-check");
 /***/ })
 
 /******/ });
-//# sourceMappingURL=xoh.js.map
+//# sourceMappingURL=unchainedkitchen.js.map
