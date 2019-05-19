@@ -1,0 +1,63 @@
+{
+  "modules": {
+    "byIdentifier": {
+      "multi private-next-pages/_document.js": 0,
+      "multi private-next-pages/boneheads.js": 1,
+      "multi private-next-pages/index.js": 2,
+      "multi private-next-pages/lfbakery.js": 3,
+      "multi private-next-pages/morriseast.js": 4,
+      "multi private-next-pages/studioeast.js": 5,
+      "multi private-next-pages/unchainedkitchen.js": 6,
+      "multi private-next-pages/xoh.js": 7,
+      "multi next/dist/pages/_app": 8,
+      "multi next/dist/pages/_error": 9
+    },
+    "usedIds": {
+      "0": 0,
+      "1": 1,
+      "2": 2,
+      "3": 3,
+      "4": 4,
+      "5": 5,
+      "6": 6,
+      "7": 7,
+      "8": 8,
+      "9": 9
+    }
+  },
+  "chunks": {
+    "byName": {
+      "static/2ltuFIBHqTMs4VjKT2tb9/pages/_app.js": 1,
+      "static/2ltuFIBHqTMs4VjKT2tb9/pages/_document.js": 2,
+      "static/2ltuFIBHqTMs4VjKT2tb9/pages/_error.js": 3,
+      "static/2ltuFIBHqTMs4VjKT2tb9/pages/boneheads.js": 4,
+      "static/2ltuFIBHqTMs4VjKT2tb9/pages/index.js": 5,
+      "static/2ltuFIBHqTMs4VjKT2tb9/pages/lfbakery.js": 6,
+      "static/2ltuFIBHqTMs4VjKT2tb9/pages/morriseast.js": 7,
+      "static/2ltuFIBHqTMs4VjKT2tb9/pages/studioeast.js": 8,
+      "static/2ltuFIBHqTMs4VjKT2tb9/pages/unchainedkitchen.js": 9,
+      "static/2ltuFIBHqTMs4VjKT2tb9/pages/xoh.js": 10
+    },
+    "bySource": {
+      "0 node_modules/next/dist/build/webpack/loaders/next-babel-loader.js??ref--4!pages/boneheads.js ../components/SommWidget": 0,
+      "0 node_modules/next/dist/build/webpack/loaders/next-babel-loader.js??ref--4!pages/lfbakery.js ../components/SommWidget": 0,
+      "0 node_modules/next/dist/build/webpack/loaders/next-babel-loader.js??ref--4!pages/morriseast.js ../components/SommWidget": 0,
+      "0 node_modules/next/dist/build/webpack/loaders/next-babel-loader.js??ref--4!pages/studioeast.js ../components/SommWidget": 0,
+      "0 node_modules/next/dist/build/webpack/loaders/next-babel-loader.js??ref--4!pages/unchainedkitchen.js ../components/SommWidget": 0,
+      "0 node_modules/next/dist/build/webpack/loaders/next-babel-loader.js??ref--4!pages/xoh.js ../components/SommWidget": 0
+    },
+    "usedIds": [
+      0,
+      1,
+      10,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  }
+}
